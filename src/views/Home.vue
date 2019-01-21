@@ -12,6 +12,9 @@
     <p>{{podcast.title}}</p>
     <p>{{podcast.date}}</p>
     <p>{{podcast.summary}}</p>
+    <audio controls>
+      <source src="../assets/this_is_a_podcast.mp3" type="audio/mpeg">
+    </audio>
     </div>
   </div>
 </div>
