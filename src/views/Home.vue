@@ -4,11 +4,17 @@
     <button @click='goToBios'>Bios</button>
   </div>
   <div>
+    <button @click='goToArchive'>Archive</button>
+  </div>
+  <div>
     <p>Recent Podcasts</p>
     <div v-for='(podcast, key) in recentPodcasts' :key='key'>
     <p>{{podcast.title}}</p>
     <p>{{podcast.date}}</p>
     <p>{{podcast.summary}}</p>
+    <audio controls>
+      <source src="../assets/this_is_a_podcast.mp3" type="audio/mpeg">
+    </audio>
     </div>
   </div>
 </div>
@@ -45,6 +51,9 @@ export default {
   methods: {
     goToBios() {
       this.$router.push({ name: 'bios' });
+    },
+    goToArchive() {
+      this.$router.push({ name: 'archive' });
     },
   },
 };
