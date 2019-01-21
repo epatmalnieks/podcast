@@ -1,13 +1,17 @@
 <template>
   <div>
     <button @click='goBack'>Go Back</button>
-    <p>Erik Patmalnieks bio goes here.
+    <p>Erik Patmalnieks is a software developer by day, and a sports aficionado by night. Erik
+      works for General Motors in Detroit, Michigan building software for
+      infotainment systems in vehicles. He has a Bachelor's Degree in Computer Science
+      with a major in Software Engineering from the University of Michigan. In his
+      free time when not watching sports, he bowls in a league and plays a hefty amount of video games.
     </p>
     <p>Ryan Belous is a content blue collar team leader in the steel working industry,
     and professional actor at Pornhub. Previously, Ryan worked as a petty officer and
     is a veteran of the United States Navy.
     Outside of work, Ryan enjoys spending time with his beautiful wife and daughter.
-    Ryan can be referred too as being humorous, insulting, sarcastic and an asshole,
+    Ryan can be referred to as being humorous, insulting, sarcastic and an asshole,
     but an all around sports fanatic. He's currently working towards a degree in
     Business Administration and Creative Writing.
     </p>
