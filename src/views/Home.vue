@@ -50,8 +50,8 @@ export default {
       this.$router.push({ name: 'bios' });
     },
     goToArchive() {
-      this.$router.push({name:'archive'});
-    }
+      this.$router.push({ name: 'archive' });
+    },
   },
 };
 </script>
