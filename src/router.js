@@ -14,10 +14,12 @@ export default new Router({
     {
       path: '/bios',
       name: 'bios',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/Bios.vue'),
+      component: () => import('./views/Bios.vue'),
+    },
+    {
+      path: '/archive',
+      name: 'archive',
+      component: () => import('./views/Archive.vue'),
     },
   ],
 });

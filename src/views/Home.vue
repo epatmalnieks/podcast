@@ -4,6 +4,9 @@
     <button @click='goToBios'>Bios</button>
   </div>
   <div>
+    <button @click='goToArchive'>Archive</button>
+  </div>
+  <div>
     <p>Recent Podcasts</p>
     <div v-for='(podcast, key) in recentPodcasts' :key='key'>
     <p>{{podcast.title}}</p>
@@ -46,6 +49,9 @@ export default {
     goToBios() {
       this.$router.push({ name: 'bios' });
     },
+    goToArchive() {
+      this.$router.push({name:'archive'});
+    }
   },
 };
 </script>
