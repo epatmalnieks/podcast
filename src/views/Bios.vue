@@ -1,5 +1,6 @@
 <template>
   <div>
+    <button @click='goBack'>Go Back</button>
     <p>Erik Patmalnieks bio goes here.
     </p>
     <p>Ryan Belous is a content blue collar team leader in the steel working industry,
@@ -16,6 +17,11 @@
 <script>
 export default {
   name: 'Bios',
+  methods: {
+    goBack() {
+      this.$router.go(-1);
+    },
+  },
 };
 </script>
 
