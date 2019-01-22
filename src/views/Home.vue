@@ -1,15 +1,13 @@
 <template>
 <div>
   <div>
-    <button @click='goToBios'>Bios</button>
-  </div>
-  <div>
-    <button @click='goToArchive'>Archive</button>
+    <button class='biosButton' @click='goToBios'>Bios</button>
+    <button class='archiveButton' @click='goToArchive'>Archive</button>
   </div>
   <div>
     <p>Recent Podcasts</p>
-    <div v-for='(podcast, key) in recentPodcasts' :key='key'>
-    <p>{{podcast.title}}</p>
+    <div class='podcastBox' v-for='(podcast, key) in recentPodcasts' :key='key'>
+    <h2>{{podcast.title}}</h2>
     <p>{{podcast.date}}</p>
     <p>{{podcast.summary}}</p>
     <audio controls>
@@ -58,3 +56,21 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.biosButton {
+color: white;
+background-color:blue;
+}
+
+.archiveButton {
+color: white;
+background-color:blue;
+}
+
+.podcastBox {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+</style>
