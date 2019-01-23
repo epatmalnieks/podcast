@@ -9,26 +9,33 @@ import HomeComponent from '@/views/Home.vue';
 
 let vm;
 let sandbox;
-const router = {
-
-};
+const $router = {};
 
 function mountComponent() {
   const HomeComponentInstance = shallowMount(HomeComponent, {
-    router,
+    mocks: {
+      $router,
+    },
   });
   ({
     vm,
   } = HomeComponentInstance);
 }
 
+const resetData = () => {
+
+};
+
 describe('#Home', () => {
-  before(() => {
-    sandbox = sinon.createSandbox();
-  });
+  before(resetData);
 
   beforeEach(() => {
-    router.push = sandbox.stub();
+    sandbox = sinon.createSandbox();
+    $router.push = sandbox.stub();
+  });
+
+  afterEach(() => {
+    sandbox.restore();
   });
 
   describe('#methods', () => {
@@ -36,7 +43,7 @@ describe('#Home', () => {
       it('should go to the bios page', () => {
         mountComponent();
         vm.goToBios();
-        expect(router.push.args[0][0]).to.deep.equal({
+        expect($router.push.args[0][0]).to.deep.equal({
           name: 'bios',
         });
       });
