@@ -1,0 +1,35 @@
+{
+  "podcasts": [{
+      "title": "Podcast 1",
+      "date": "1/21/2019",
+      "summary": "Summary 1",
+      "src": "../assets/this_is_a_podcast.mp3"
+    }, {
+      "title": "Podcast 2",
+      "date": "1/22/2019",
+      "summary": "Summary 2",
+      "src": "../assets/this_is_a_podcast.mp3"
+    }, {
+      "title": "Podcast 3",
+      "date": "1/23/2019",
+      "summary": "Summary 3",
+      "src": "../assets/this_is_a_podcast.mp3"
+    }, {
+      "title": "Podcast 4",
+      "date": "1/24/2019",
+      "summary": "Summary 4",
+      "src": "../assets/this_is_a_podcast.mp3"
+    }, {
+      "title": "Podcast 5",
+      "date": "1/25/2019",
+      "summary": "Summary 5",
+      "src": "../assets/this_is_a_podcast.mp3"
+    },
+    {
+      "title": "Podcast 6",
+      "date": "1/27/2019",
+      "summary": "Summary 6",
+      "src": "../assets/this_is_a_podcast.mp3"
+    }
+  ]
+}

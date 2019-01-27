@@ -1,18 +1,47 @@
 <template>
   <div id="app">
-    <h1>Podcast name</h1>
+    <nav-component></nav-component>
+    <h1>78% Sports</h1>
+    <h5>A podcast containing 78% sports and 22% nonsense.</h5>
     <router-view/>
   </div>
 </template>
 
+<script>
+import NavComponent from '@/components/Nav.vue';
+
+export default {
+  name: 'Nav',
+  components: {
+    NavComponent,
+  },
+};
+</script>
+
 <style lang="scss">
   @font-face{
-    font-family: 'Raleway-Regular';
-    src: url('assets/fonts/Raleway-Regular.ttf');
+    font-family: 'OpenSans-Regular';
+    src: url('assets/fonts/OpenSans-Regular.ttf');
+  }
+
+  @font-face{
+    font-family: 'OpenSans-Light';
+    src: url('assets/fonts/OpenSans-Light.ttf');
   }
 
   body {
-    font-family: 'Raleway-Regular';
+    font-family: 'OpenSans-Regular';
+    background-color: #EFEFEF;
+    color: #646464;
+  }
+
+  h1 {
+      margin: 0;
+  }
+
+  h5{
+    margin: 0;
+    font-family: 'OpenSans-Light';
   }
 
   // Extra small devices (portrait phones, less than 576px)

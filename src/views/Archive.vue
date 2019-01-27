@@ -1,18 +1,24 @@
 <template>
   <div>
-    <button @click='goBack'>Go Back</button>
-    <p>This is the archive.
-    </p>
+    <div v-for='(podcast, key) in allPodcasts' :key='key'>
+      <podcast-box :podcast="podcast"></podcast-box>
+    </div>
   </div>
 </template>
 
 <script>
+import podcastList from '@/assets/podcastList.json';
+import podcastBox from '@/components/PodcastBox.vue';
+
 export default {
   name: 'Archive',
-  methods: {
-    goBack() {
-      this.$router.go(-1);
-    },
+  components: {
+    podcastBox,
+  },
+  data() {
+    return {
+      allPodcasts: podcastList.podcasts,
+    };
   },
 };
 </script>
