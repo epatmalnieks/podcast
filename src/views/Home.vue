@@ -1,10 +1,6 @@
 <template>
 <div>
   <div>
-    <button class='biosButton' @click='goToBios'>Bios</button>
-    <button class='archiveButton' @click='goToArchive'>Archive</button>
-  </div>
-  <div>
     <p>Recent Podcasts</p>
     <div class='podcastBox' v-for='(podcast, key) in recentPodcasts' :key='key'>
     <h2>{{podcast.title}}</h2>
@@ -45,14 +41,6 @@ export default {
         summary: 'Summary 5',
       }],
     };
-  },
-  methods: {
-    goToBios() {
-      this.$router.push({ name: 'bios' });
-    },
-    goToArchive() {
-      this.$router.push({ name: 'archive' });
-    },
   },
 };
 </script>
