@@ -7,7 +7,7 @@
     <p>{{podcast.date}}</p>
     <p>{{podcast.summary}}</p>
     <audio controls>
-      <source src="../assets/this_is_a_podcast.mp3" type="audio/mpeg">
+      <source :src="podcast.src" type="audio/mpeg">
     </audio>
     </div>
   </div>
@@ -15,31 +15,13 @@
 </template>
 
 <script>
+import podcastList from '@/assets/podcastList.json';
+
 export default {
   name: 'home',
   data() {
     return {
-      recentPodcasts: [{
-        title: 'Podcast 1',
-        date: '1/21/2019',
-        summary: 'Summary 1',
-      }, {
-        title: 'Podcast 2',
-        date: '1/22/2019',
-        summary: 'Summary 2',
-      }, {
-        title: 'Podcast 3',
-        date: '1/23/2019',
-        summary: 'Summary 3',
-      }, {
-        title: 'Podcast 4',
-        date: '1/24/2019',
-        summary: 'Summary 4',
-      }, {
-        title: 'Podcast 5',
-        date: '1/25/2019',
-        summary: 'Summary 5',
-      }],
+      recentPodcasts: podcastList.podcasts.slice(0, 5),
     };
   },
 };
