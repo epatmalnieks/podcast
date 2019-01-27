@@ -24,7 +24,6 @@ export default {
   margin: 10px;
   padding: 10px;
   background-color: #CAEBF2;
-  opacity: 0.7;
   border-radius: 10px;
 }
 </style>
