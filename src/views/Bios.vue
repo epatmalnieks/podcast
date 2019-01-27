@@ -1,6 +1,5 @@
 <template>
   <div>
-    <button @click='goBack'>Go Back</button>
     <p>Erik Patmalnieks is a software developer by day, and a sports aficionado by night. Erik
       works for General Motors in Detroit, Michigan building software for
       infotainment systems in vehicles. He has a Bachelor's Degree in Computer Science
@@ -22,9 +21,6 @@
 export default {
   name: 'Bios',
   methods: {
-    goBack() {
-      this.$router.go(-1);
-    },
   },
 };
 </script>
