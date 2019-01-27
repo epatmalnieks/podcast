@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <h1>Podcast name</h1>
+    <h1>78% Sports</h1>
+    <h5>A podcast containing 78% sports and 22% nonsense.</h5>
     <router-view/>
   </div>
 </template>
@@ -11,8 +12,19 @@
     src: url('assets/fonts/OpenSans-Regular.ttf');
   }
 
+  @font-face{
+    font-family: 'OpenSans-Light';
+    src: url('assets/fonts/OpenSans-Light.ttf');
+  }
+
   body {
     font-family: 'OpenSans-Regular';
+    background-color: #EFEFEF;
+    color: #646464;
+  }
+
+  h5{
+    font-family: 'OpenSans-Light';
   }
 
   // Extra small devices (portrait phones, less than 576px)

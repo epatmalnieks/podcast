@@ -59,18 +59,20 @@ export default {
 
 <style lang="scss">
 .biosButton {
-color: white;
-background-color:blue;
+color: #FFFFFF;
+background-color:#FF3B3F;
 }
 
 .archiveButton {
-color: white;
-background-color:blue;
+color: #FFFFFF;
+background-color:#FF3B3F;
 }
 
 .podcastBox {
   border: 1px solid black;
   margin: 10px;
   padding: 10px;
+  background-color: #CAEBF2;
+  opacity: 0.7;
 }
 </style>
