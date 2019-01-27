@@ -7,12 +7,12 @@
 
 <style lang="scss">
   @font-face{
-    font-family: 'Raleway-Regular';
-    src: url('assets/fonts/Raleway-Regular.ttf');
+    font-family: 'OpenSans-Regular';
+    src: url('assets/fonts/OpenSans-Regular.ttf');
   }
 
   body {
-    font-family: 'Raleway-Regular';
+    font-family: 'OpenSans-Regular';
   }
 
   // Extra small devices (portrait phones, less than 576px)
