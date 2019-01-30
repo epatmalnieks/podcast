@@ -32,26 +32,5 @@ export default {
 </script>
 
 <style lang="scss">
-.nav {
-  float:right;
-}
-
-.navButton {
-color: #646464;
-background-color:#FFFFFF;
-border: none;
-height: 50px;
-width: 70px;
-text-align: center;
-}
-
-.navButtonSelected {
-  color: #FFFFFF;
-  background-color:#FFFFFF;
-  border: none;
-  height: 50px;
-  width: 70px;
-  text-align: center;
-  background-color:#FF3B3F;
-}
+@import "../styles/components/nav.scss";
 </style>

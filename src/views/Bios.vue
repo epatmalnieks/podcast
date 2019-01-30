@@ -26,5 +26,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+@import "../styles/views/bios.scss";
 </style>
