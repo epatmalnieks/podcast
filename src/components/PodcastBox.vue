@@ -18,6 +18,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../styles/components/podcastBox.scss";
 </style>

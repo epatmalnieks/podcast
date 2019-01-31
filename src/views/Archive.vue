@@ -23,6 +23,6 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 @import "../styles/views/archive.scss";
 </style>
