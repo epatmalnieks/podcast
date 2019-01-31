@@ -3,8 +3,9 @@
 }
 
 .navButton {
-  color: #646464;
-  background-color: #FFFFFF;
+  color: $white;
+  opacity: 0.9;
+  background-color: $black;
   border: none;
   height: 50px;
   width: 70px;
@@ -12,11 +13,12 @@
 }
 
 .navButtonSelected {
-  color: #FFFFFF;
-  background-color: #FFFFFF;
+  color: $white;
+  opacity: 0.9;
+  background-color: $black;
   border: none;
   height: 50px;
   width: 70px;
   text-align: center;
-  background-color: #FF3B3F;
+  border-bottom: 1px solid $green;
 }
