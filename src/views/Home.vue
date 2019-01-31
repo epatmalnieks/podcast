@@ -26,6 +26,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
-
+<style lang="scss" scoped>
+@import "../styles/views/home.scss";
 </style>

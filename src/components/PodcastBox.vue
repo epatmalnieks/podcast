@@ -18,12 +18,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.podcastBox {
-  border: 1px solid black;
-  margin: 10px;
-  padding: 10px;
-  background-color: #CAEBF2;
-  border-radius: 10px;
-}
+<style lang="scss" scoped>
+@import "../styles/components/podcastBox.scss";
 </style>
