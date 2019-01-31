@@ -2,7 +2,7 @@
   <div id="app">
     <nav-component></nav-component>
     <h1>78% Sports</h1>
-    <h5>A podcast containing 78% sports and 22% nonsense.</h5>
+    <h4>A podcast containing 78% sports and 22% nonsense.</h4>
     <router-view/>
   </div>
 </template>

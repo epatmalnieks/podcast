@@ -1,6 +1,6 @@
 <template>
   <div class="podcastBox">
-    <h2>{{podcast.title}}</h2>
+    <h3>{{podcast.title}}</h3>
     <p>{{podcast.date}}</p>
     <p>{{podcast.summary}}</p>
     <audio controls>
