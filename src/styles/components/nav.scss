@@ -1,0 +1,17 @@
+.navButton {
+  color: $white;
+  opacity: 0.9;
+  background-color: $black;
+  border: none;
+  text-align: center;
+  margin: 20px 15px;
+  padding-bottom: 5px;
+}
+
+.navButtonSelected {
+  border-bottom: 1px solid $green;
+}
+
+.navButtonContainer {
+  float:right;
+}

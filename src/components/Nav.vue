@@ -1,9 +1,15 @@
 <template>
-  <div class="nav">
-    <button class="navButton" :class="selectedRoute === '/' ? 'navButtonSelected' : ''" @click='goToHome'>Home</button>
-    <button class="navButton" :class="selectedRoute === 'bios' ? 'navButtonSelected' : ''" @click='goToBios'>Bios</button>
-    <button class="navButton" :class="selectedRoute === 'archive' ? 'navButtonSelected' : ''" @click='goToArchive'>Archive</button>
+<div>
+  <div class="navButtonContainer" @click='goToArchive'>
+    <div class="navButton" :class="{navButtonSelected: selectedRoute === 'archive'}">Archive</div>
   </div>
+  <div class="navButtonContainer" @click='goToBios'>
+    <div class="navButton" :class="{navButtonSelected: selectedRoute === 'bios'}">Bios</div>
+  </div>
+  <div class="navButtonContainer" @click='goToHome'>
+    <div class="navButton" :class="{navButtonSelected: selectedRoute === '/'}">Home</div>
+  </div>
+</div>
 </template>
 
 <script>
@@ -16,42 +22,27 @@ export default {
   },
   methods: {
     goToBios() {
-      this.$router.push({ name: 'bios' });
+      this.$router.push({
+        name: 'bios',
+      });
       this.selectedRoute = 'bios';
     },
     goToArchive() {
-      this.$router.push({ name: 'archive' });
+      this.$router.push({
+        name: 'archive',
+      });
       this.selectedRoute = 'archive';
     },
     goToHome() {
-      this.$router.push({ name: 'home' });
+      this.$router.push({
+        name: 'home',
+      });
       this.selectedRoute = '/';
     },
   },
 };
 </script>
 
-<style lang="scss">
-.nav {
-  float:right;
-}
-
-.navButton {
-color: #646464;
-background-color:#FFFFFF;
-border: none;
-height: 50px;
-width: 70px;
-text-align: center;
-}
-
-.navButtonSelected {
-  color: #FFFFFF;
-  background-color:#FFFFFF;
-  border: none;
-  height: 50px;
-  width: 70px;
-  text-align: center;
-  background-color:#FF3B3F;
-}
+<style lang="scss" scoped>
+@import "../styles/components/nav.scss";
 </style>

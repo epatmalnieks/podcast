@@ -1,7 +1,8 @@
 <template>
   <div>
+    <h2>Archive</h2>
     <div v-for='(podcast, key) in allPodcasts' :key='key'>
-      <podcast-box :podcast="podcast"></podcast-box>
+      <podcast-box :podcast="podcast" :index="key" :numPodcasts="allPodcasts.length - 1"></podcast-box>
     </div>
   </div>
 </template>
@@ -23,6 +24,6 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-
+<style lang="scss" scoped>
+@import "../styles/views/archive.scss";
 </style>
