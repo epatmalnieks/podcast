@@ -1,5 +1,5 @@
 <template>
-  <div class="podcastBox">
+  <div class="podcastBox" :class="{lastPodcastBox: index === numPodcasts}">
     <h3>{{podcast.title}}</h3>
     <p>{{podcast.date}}</p>
     <p>{{podcast.summary}}</p>
@@ -13,6 +13,8 @@
 export default {
   props: {
     podcast: Object,
+    index: Number,
+    numPodcasts: Number,
   },
   name: 'PodcastBox',
 };

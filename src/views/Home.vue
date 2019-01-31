@@ -3,7 +3,7 @@
   <div>
     <h2>Recent Podcasts</h2>
     <div v-for='(podcast, key) in recentPodcasts' :key='key'>
-      <podcast-box :podcast="podcast"></podcast-box>
+      <podcast-box :podcast="podcast" :index="key" :numPodcasts="recentPodcasts.length - 1" ></podcast-box>
     </div>
   </div>
 </div>
