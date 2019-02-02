@@ -17,7 +17,7 @@ h1{
 }
 
 h2 {
-  margin: 20px 10px 10px 10px;
+  margin: 0 10px 10px 10px;
   color: $white;
   opacity: 0.9;
   font-size: 28px;
@@ -50,6 +50,12 @@ p {
 .logo {
   height: 150px;
   width: 150px;
+}
+
+.slogan {
+  clear:both;
+  float: right;
+  width: 220px;
 }
 
 // Extra small devices (portrait phones, less than 576px)

@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <nav-component></nav-component>
+    <div class="slogan">
+      <p>A podcast with 78% sports and 22% nonsense.</p>
+    </div>
     <img class="logo" alt="78% Sports" src="../assets/images/78percentsports.png"/>
-    <h4>A podcast containing 78% sports and 22% nonsense.</h4>
     <router-view/>
   </div>
 </template>
