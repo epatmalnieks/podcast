@@ -7,7 +7,8 @@
       works for General Motors in Detroit, Michigan building software for
       infotainment systems in vehicles. He has a Bachelor's Degree in Computer Science
       with a major in Software Engineering from the University of Michigan. In his
-      free time when not watching sports, he bowls in a league and plays a hefty amount of video games.
+      free time when not watching sports, he bowls in a league, plays a hefty amount of video games,
+      and smokes a ton of crack.
     </p>
     <p class="ryan">
     <img class="biosImage" src="../assets/images/ryan.jpg"/>

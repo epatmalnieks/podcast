@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <nav-component></nav-component>
-    <h1>78% Sports</h1>
-    <h4>A podcast containing 78% sports and 22% nonsense.</h4>
+    <div class="slogan">
+      <p>A podcast with 78% sports and 22% nonsense.</p>
+    </div>
+    <img class="logo" alt="78% Sports" src="../assets/images/78percentsports.png"/>
     <router-view/>
   </div>
 </template>
@@ -19,5 +21,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "styles/app.scss";
+@import "../styles/views/app.scss";
 </style>
