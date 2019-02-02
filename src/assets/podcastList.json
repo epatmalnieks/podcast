@@ -3,33 +3,33 @@
       "title": "Podcast 1",
       "date": "1/21/2019",
       "summary": "This is somewhat of a small summary",
-      "src": "../assets/this_is_a_podcast.mp3"
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/this_is_a_podcast.mp3"
     }, {
       "title": "Podcast 2",
       "date": "1/22/2019",
       "summary": "This summary is going to be really long and could contain a bunch of crap. Not sure if I want to limit this yet or not.",
-      "src": "../assets/this_is_a_podcast.mp3"
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/this_is_a_podcast.mp3"
     }, {
       "title": "Podcast 3",
       "date": "1/23/2019",
       "summary": "Summary 3",
-      "src": "../assets/this_is_a_podcast.mp3"
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/this_is_a_podcast.mp3"
     }, {
       "title": "Podcast 4",
       "date": "1/24/2019",
       "summary": "Summary 4",
-      "src": "../assets/this_is_a_podcast.mp3"
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/this_is_a_podcast.mp3"
     }, {
       "title": "Podcast 5",
       "date": "1/25/2019",
       "summary": "Summary 5",
-      "src": "../assets/this_is_a_podcast.mp3"
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/this_is_a_podcast.mp3"
     },
     {
       "title": "Podcast 6",
       "date": "1/27/2019",
       "summary": "Summary 6",
-      "src": "../assets/this_is_a_podcast.mp3"
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/this_is_a_podcast.mp3"
     }
   ]
 }
