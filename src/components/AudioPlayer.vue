@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="audioPlayer">
-      <a style="color: white" @click="stop()" class="icon-stop2" >Stop</a>
+      <div @click="stop()" class="stop"></div>
       <a style="color: white" @click="pause()" :class="[ paused ? 'icon-play3' : 'icon-pause2' ]">Play</a>
       <div v-on:click="setPosition" :class="`vue-sound__playback-time-wrapper`">
           <div v-bind:style="progressStyle" class="progressBar"></div>
@@ -11,7 +11,7 @@
       <div class="options">
         <a style="color: white" @click="download()">download</a>
         <a style="color: white" @click="mute()" :class="[isMuted ? 'icon-volume-mute2': 'icon-volume-high' ]">mute</a>
-        <a v-on:mouseover="toggleVolume()" class="volume-toggle icon-paragraph-justify">
+        <a v-on:mouseover="toggleVolume()" class="volume-toggle">
           <input orient="vertical" v-model.lazy="volumeValue" v-on:change="updateVolume()" v-show="hideVolumeSlider" type="range" min="0" max="100" class="volume-slider"/>
         </a>
       </div>
