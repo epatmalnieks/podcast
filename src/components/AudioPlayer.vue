@@ -3,32 +3,25 @@
     <div :class="`vue-sound__player`">
       <a style="color: white" @click="stop()" title="Stop" class="icon-stop2" >Stop</a>
       <a style="color: white" @click="pause()" title="Play" :class="[ paused ? 'icon-play3' : 'icon-pause2' ]">Play</a>
-      <div v-on:click="setPosition" :class="`vue-sound__playback-time-wrapper`" title="Time played : Total time">
+      <div v-on:click="setPosition" :class="`vue-sound__playback-time-wrapper`">
           <div v-bind:style="progressStyle" :class="`vue-sound__playback-time-indicator`"></div>
           <span style="color: white" :class="`vue-sound__playback-time-current`">{{currentTime}}</span>
-          <span style="color: white" :class="`vue-sound__playback-time-separator`"></span>
-          <span style="color: white" :class="`vue-sound__playback-time-total`">{{duration}}</span>
+          <span style="color: white">{{duration}}</span>
       </div>
       <div :class="`vue-sound__extern-wrapper`">
-        <a @click="download()" class="icon-download"></a>
-        <a @click="changeLoop()" :class="[ innerLoop ? 'icon-spinner10' : 'icon-spinner11']"></a>
-        <a @click="mute()" :class="[isMuted ? 'icon-volume-mute2': 'icon-volume-high' ]" title="Mute"></a>
+        <a style="color: white" @click="download()" class="icon-download">download</a>
+        <a style="color: white" @click="mute()" :class="[isMuted ? 'icon-volume-mute2': 'icon-volume-high' ]" title="Mute">mute</a>
         <a v-on:mouseover="toggleVolume()" class="volume-toggle icon-paragraph-justify" title="Volume">
           <input orient="vertical" v-model.lazy="volumeValue" v-on:change="updateVolume()" v-show="hideVolumeSlider" type="range" min="0" max="100" class="volume-slider"/>
         </a>
-
       </div>
     </div>
-    <audio v-bind:id="playerId" :loop="innerLoop" ref="audiofile" :src="file" preload="auto" style="display:none;"></audio>
+    <audio v-bind:id="playerId" ref="audiofile" :src="file" preload="auto" style="display:none;"></audio>
   </div>
 </template>
 
 <script>
 export const baseVolumeValue = 7.5;
-
-export const prefixCls = 'vue-sound';
-
-export const generateUUID = () => Math.random();
 
 export const convertTimeHHMMSS = (val) => {
   const hhmmss = new Date(val * 1000).toISOString().substr(11, 8);
@@ -40,15 +33,9 @@ export default {
   props: {
     file: {
       type: String,
-      default: null,
     },
-    autoPlay: {
-      type: Boolean,
-      default: false,
-    },
-    loop: {
-      type: Boolean,
-      default: false,
+    index: {
+      type: Number,
     },
   },
   computed: {
@@ -56,10 +43,7 @@ export default {
       return this.audio ? convertTimeHHMMSS(this.totalDuration) : '';
     },
     playerId() {
-      return `player-${this.uuid}`;
-    },
-    classes() {
-      return prefixCls;
+      return `audioPlayer-${this.index}`;
     },
   },
   data() {
@@ -70,8 +54,6 @@ export default {
       paused: true,
       progressStyle: '',
       currentTime: '00:00',
-      uuid: '0',
-      innerLoop: undefined,
       audio: undefined,
       totalDuration: 0,
       hideVolumeSlider: false,
@@ -126,9 +108,6 @@ export default {
         this.audio.play();
       }
     },
-    changeLoop() {
-      this.innerLoop = !this.innerLoop;
-    },
     download() {
       this.stop();
       window.open(this.file, 'download');
@@ -161,21 +140,13 @@ export default {
         this.paused = true;
       }
     },
-    init() {
-      this.audio.addEventListener('timeupdate', this.handlePlayingUI);
-      this.audio.addEventListener('loadeddata', this.handleLoaded);
-      this.audio.addEventListener('pause', this.handlePlayPause);
-      this.audio.addEventListener('play', this.handlePlayPause);
-    },
-    getAudio() {
-      return this.$el.querySelectorAll('audio')[0];
-    },
   },
   mounted() {
-    this.uuid = generateUUID();
-    this.audio = this.getAudio();
-    this.innerLoop = this.loop;
-    this.init();
+    this.audio = this.$el.querySelectorAll('audio')[0];
+    this.audio.addEventListener('timeupdate', this.handlePlayingUI);
+    this.audio.addEventListener('loadeddata', this.handleLoaded);
+    this.audio.addEventListener('pause', this.handlePlayPause);
+    this.audio.addEventListener('play', this.handlePlayPause);
   },
   beforeDestroy() {
     this.audio.removeEventListener('timeupdate', this.handlePlayingUI);

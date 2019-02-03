@@ -3,7 +3,7 @@
     <h3>{{podcast.title}}</h3>
     <p>{{podcast.date}}</p>
     <p>{{podcast.summary}}</p>
-    <audio-player :file="podcast.src"></audio-player>
+    <audio-player :file="podcast.src" :index="index"></audio-player>
   </div>
 </template>
 

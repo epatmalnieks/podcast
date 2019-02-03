@@ -26,22 +26,14 @@
       }
     }
     .vue-sound__playback-time-wrapper {
-      background: transparent;
       position: relative;
-      width: 250px;
       display: inline-block;
-      background: #e0dcd7;
-      height: 3px;
-      cursor: pointer;
-      font-size: 14px;
+      background: $white;
+      height: 5px;
       vertical-align: middle;
-      .vue-sound__playback-time-separator::after {
-          content:' : ';
-      }
-      .vue-sound__playback-time-total {
-      }
+
       .vue-sound__playback-time-indicator {
-          background: #5099ff;
+          background: $green;
           position: absolute;
           top: 0;
           left: 0;
