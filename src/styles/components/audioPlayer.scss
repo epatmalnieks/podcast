@@ -1,5 +1,4 @@
-.vue-sound-wrapper {
-  .vue-sound__player {
+  .audioPlayer {
     height: 30px;
     line-height: 30px;
     a {
@@ -7,7 +6,7 @@
       display: inline-block;
       vertical-align: middle;
     }
-    .vue-sound__extern-wrapper {
+    .options {
       display: inline-block;
       margin-left: 10px;
       > a {
@@ -32,7 +31,7 @@
       height: 5px;
       vertical-align: middle;
 
-      .vue-sound__playback-time-indicator {
+      .progressBar {
           background: $green;
           position: absolute;
           top: 0;
@@ -41,4 +40,3 @@
       }
     }
   }
-}
