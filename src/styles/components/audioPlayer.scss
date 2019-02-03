@@ -1,0 +1,52 @@
+.vue-sound-wrapper {
+  .vue-sound__player {
+    height: 30px;
+    line-height: 30px;
+    a {
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .vue-sound__extern-wrapper {
+      display: inline-block;
+      margin-left: 10px;
+      > a {
+        margin-right: 5px;
+        vertical-align: 0;
+      }
+      .volume-toggle {
+        position: relative;
+        .volume-slider {
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+          width: 80px;
+          left: 24px;
+        }
+      }
+    }
+    .vue-sound__playback-time-wrapper {
+      background: transparent;
+      position: relative;
+      width: 250px;
+      display: inline-block;
+      background: #e0dcd7;
+      height: 3px;
+      cursor: pointer;
+      font-size: 14px;
+      vertical-align: middle;
+      .vue-sound__playback-time-separator::after {
+          content:' : ';
+      }
+      .vue-sound__playback-time-total {
+      }
+      .vue-sound__playback-time-indicator {
+          background: #5099ff;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+      }
+    }
+  }
+}
