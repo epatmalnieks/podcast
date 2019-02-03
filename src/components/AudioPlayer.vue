@@ -1,8 +1,8 @@
 <template>
   <div :class="`vue-sound-wrapper`">
     <div :class="`vue-sound__player`">
-      <a style="color: white" @click="stop()" title="Stop" class="icon-stop2" >Stop</a>
-      <a style="color: white" @click="pause()" title="Play" :class="[ paused ? 'icon-play3' : 'icon-pause2' ]">Play</a>
+      <a style="color: white" @click="stop()" class="icon-stop2" >Stop</a>
+      <a style="color: white" @click="pause()" :class="[ paused ? 'icon-play3' : 'icon-pause2' ]">Play</a>
       <div v-on:click="setPosition" :class="`vue-sound__playback-time-wrapper`">
           <div v-bind:style="progressStyle" :class="`vue-sound__playback-time-indicator`"></div>
           <span style="color: white" :class="`vue-sound__playback-time-current`">{{currentTime}}</span>
@@ -10,19 +10,17 @@
       </div>
       <div :class="`vue-sound__extern-wrapper`">
         <a style="color: white" @click="download()" class="icon-download">download</a>
-        <a style="color: white" @click="mute()" :class="[isMuted ? 'icon-volume-mute2': 'icon-volume-high' ]" title="Mute">mute</a>
-        <a v-on:mouseover="toggleVolume()" class="volume-toggle icon-paragraph-justify" title="Volume">
+        <a style="color: white" @click="mute()" :class="[isMuted ? 'icon-volume-mute2': 'icon-volume-high' ]">mute</a>
+        <a v-on:mouseover="toggleVolume()" class="volume-toggle icon-paragraph-justify">
           <input orient="vertical" v-model.lazy="volumeValue" v-on:change="updateVolume()" v-show="hideVolumeSlider" type="range" min="0" max="100" class="volume-slider"/>
         </a>
       </div>
     </div>
-    <audio v-bind:id="playerId" ref="audiofile" :src="file" preload="auto" style="display:none;"></audio>
+    <audio v-bind:id="playerId" :src="file" preload="auto" style="display:none;"></audio>
   </div>
 </template>
 
 <script>
-export const baseVolumeValue = 7.5;
-
 export const convertTimeHHMMSS = (val) => {
   const hhmmss = new Date(val * 1000).toISOString().substr(11, 8);
   return (hhmmss.indexOf('00:') === 0) ? hhmmss.substr(3) : hhmmss;
@@ -57,7 +55,7 @@ export default {
       audio: undefined,
       totalDuration: 0,
       hideVolumeSlider: false,
-      volumeValue: baseVolumeValue,
+      volumeValue: 7.5,
     };
   },
   methods: {
@@ -142,7 +140,7 @@ export default {
     },
   },
   mounted() {
-    this.audio = this.$el.querySelectorAll('audio')[0];
+    [this.audio] = this.$el.querySelectorAll('audio');
     this.audio.addEventListener('timeupdate', this.handlePlayingUI);
     this.audio.addEventListener('loadeddata', this.handleLoaded);
     this.audio.addEventListener('pause', this.handlePlayPause);
