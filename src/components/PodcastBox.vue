@@ -3,15 +3,12 @@
     <h3>{{podcast.title}}</h3>
     <p>{{podcast.date}}</p>
     <p>{{podcast.summary}}</p>
-    <!-- <audio controls>
-      <source :src="podcast.src" type="audio/mpeg">
-    </audio> -->
-    <test :file="podcast.src"></test>
+    <audio-player :file="podcast.src"></audio-player>
   </div>
 </template>
 
 <script>
-import test from './AudioPlayer.vue';
+import audioPlayer from './AudioPlayer.vue';
 
 export default {
   props: {
@@ -20,7 +17,7 @@ export default {
     numPodcasts: Number,
   },
   components: {
-    test,
+    audioPlayer,
   },
   name: 'PodcastBox',
 };
