@@ -2,7 +2,7 @@
   <div>
     <div class="audioPlayer">
       <div @click="stop()" class="stop"></div>
-      <a style="color: white" @click="pause()" :class="[ paused ? 'icon-play3' : 'icon-pause2' ]">Play</a>
+      <div @click="pause()" :class="paused ? 'play' : 'pause'"></div>
       <div v-on:click="setPosition" :class="`vue-sound__playback-time-wrapper`">
           <div v-bind:style="progressStyle" class="progressBar"></div>
           <span style="color: white">{{currentTime}}</span>
