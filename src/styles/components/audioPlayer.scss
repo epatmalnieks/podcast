@@ -13,7 +13,18 @@
       bottom: 0;
   }
 
+  .currentTime {
+    color: $white;
+    opacity: 0.9;
+  }
+
+  .duration {
+    color: $white;
+    opacity: 0.9;
+  }
+
   %audioPlayerButton {
+    margin-top: 20px;
     background-repeat: no-repeat;
     height: 50px;
     width:53px;
