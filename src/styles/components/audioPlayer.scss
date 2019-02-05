@@ -1,8 +1,11 @@
+.audioPlayer{
+  margin-top: 15px;
+}
+
   .progressBarContainer {
     position: relative;
     background: $white;
     height: 5px;
-    vertical-align: middle;
   }
 
   .progressBar {
@@ -16,15 +19,24 @@
   .currentTime {
     color: $white;
     opacity: 0.9;
+    float: left;
+    margin-top: 5px;
   }
 
   .duration {
     color: $white;
     opacity: 0.9;
+    float: right;
+    margin-top: 5px;
+  }
+
+  .audioPlayerButtonsContainer{
+    clear: both;
+    text-align: center;
   }
 
   %audioPlayerButton {
-    margin-top: 20px;
+    margin-top: 5px;
     background-repeat: no-repeat;
     height: 50px;
     width:53px;

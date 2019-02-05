@@ -1,14 +1,16 @@
 <template>
-  <div>
+  <div class="audioPlayer">
       <div @click="setPosition" class="progressBarContainer">
           <div v-bind:style="progressStyle" class="progressBar"></div>
           <span class="currentTime">{{currentTime}}</span>
           <span class="duration">{{duration}}</span>
       </div>
-      <div @click="stop()" class="stop"></div>
-      <div @click="pause()" :class="paused ? 'play' : 'pause'"></div>
-      <div @click="download()" class="download"></div>
-      <input v-model.lazy="volumeValue" v-on:change="updateVolume()" type="range" min="0" max="100"/>
+      <div class="audioPlayerButtonsContainer">
+        <div @click="stop()" class="stop"></div>
+        <div @click="pause()" :class="paused ? 'play' : 'pause'"></div>
+        <div @click="download()" class="download"></div>
+        <input v-model.lazy="volumeValue" v-on:change="updateVolume()" type="range" min="0" max="100"/>
+      </div>
     <audio v-bind:id="playerId" :src="file" style="display:none;"></audio>
   </div>
 </template>
