@@ -1,18 +1,15 @@
 <template>
   <div>
     <div class="audioPlayer">
-      <div @click="stop()" class="stop"></div>
-      <div @click="pause()" :class="paused ? 'play' : 'pause'"></div>
       <div v-on:click="setPosition" class="progressBarContainer">
           <div v-bind:style="progressStyle" class="progressBar"></div>
           <span style="color: white">{{currentTime}}</span>
           <span style="color: white">{{duration}}</span>
       </div>
-        <div class="download" @click="download()"></div>
-        <a style="color: white" @click="mute()" :class="[isMuted ? 'icon-volume-mute2': 'icon-volume-high' ]">mute</a>
-        <a v-on:mouseover="toggleVolume()">
-          <input orient="vertical" v-model.lazy="volumeValue" v-on:change="updateVolume()" v-show="hideVolumeSlider" type="range" min="0" max="100" class="volume-slider"/>
-        </a>
+      <div @click="stop()" class="stop"></div>
+      <div @click="pause()" :class="paused ? 'play' : 'pause'"></div>
+      <div class="download" @click="download()"></div>
+      <input orient="vertical" v-model.lazy="volumeValue" v-on:change="updateVolume()" type="range" min="0" max="100"/>
     </div>
     <audio v-bind:id="playerId" :src="file" style="display:none;"></audio>
   </div>
@@ -44,7 +41,6 @@ export default {
   },
   data() {
     return {
-      isMuted: false,
       loaded: false,
       playing: false,
       paused: true,
@@ -52,7 +48,6 @@ export default {
       currentTime: '00:00',
       audio: undefined,
       totalDuration: 0,
-      hideVolumeSlider: false,
       volumeValue: 7.5,
     };
   },
@@ -69,20 +64,14 @@ export default {
       this.audio.currentTime = parseInt(this.audio.duration * seekPos, 10);
     },
     updateVolume() {
-      this.hideVolumeSlider = false;
       this.audio.volume = this.volumeValue / 100;
       if (this.volumeValue / 100 > 0) {
-        this.isMuted = false;
         this.audio.muted = false;
       }
 
       if (this.volumeValue / 100 === 0) {
-        this.isMuted = true;
         this.audio.muted = true;
       }
-    },
-    toggleVolume() {
-      this.hideVolumeSlider = true;
     },
     stop() {
       this.playing = false;
@@ -107,11 +96,6 @@ export default {
     download() {
       this.stop();
       window.open(this.file, 'download');
-    },
-    mute() {
-      this.isMuted = !this.isMuted;
-      this.audio.muted = this.isMuted;
-      this.volumeValue = this.isMuted ? 0 : 75;
     },
     handleLoaded() {
       if (this.audio.readyState >= 2) {

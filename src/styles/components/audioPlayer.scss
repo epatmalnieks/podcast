@@ -1,6 +1,5 @@
   .progressBarContainer {
     position: relative;
-    display: inline-block;
     background: $white;
     height: 5px;
     vertical-align: middle;
@@ -14,42 +13,29 @@
       bottom: 0;
   }
 
-  .stop {
-    background-image: url('../assets/images/stop.png');
+  %audioPlayerButton {
     background-repeat: no-repeat;
     height: 50px;
     width:53px;
     display:inline-block;
+  }
+
+  .stop {
+    @extend %audioPlayerButton;
+    background-image: url('../assets/images/stop.png');
   }
 
   .play {
+    @extend %audioPlayerButton;
     background-image: url('../assets/images/play.png');
-    background-repeat: no-repeat;
-    height: 50px;
-    width:53px;
-    display:inline-block;
   }
 
   .pause {
+    @extend %audioPlayerButton;
     background-image: url('../assets/images/pause.png');
-    background-repeat: no-repeat;
-    height: 50px;
-    width:53px;
-    display:inline-block;
   }
 
   .download {
+    @extend %audioPlayerButton;
     background-image: url('../assets/images/download.png');
-    background-repeat: no-repeat;
-    height: 50px;
-    width:53px;
-    display:inline-block;
-  }
-
-  .mute {
-    background-image: url('../assets/images/pause.png');
-    background-repeat: no-repeat;
-    height: 50px;
-    width:53px;
-    display:inline-block;
   }
