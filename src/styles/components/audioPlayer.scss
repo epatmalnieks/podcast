@@ -1,44 +1,17 @@
-  .audioPlayer {
-    height: 30px;
-    line-height: 30px;
-    a {
-      cursor: pointer;
-      display: inline-block;
-      vertical-align: middle;
-    }
-    .options {
-      display: inline-block;
-      margin-left: 10px;
-      > a {
-        margin-right: 5px;
-        vertical-align: 0;
-      }
-      .volume-toggle {
-        position: relative;
-        .volume-slider {
-          cursor: pointer;
-          position: absolute;
-          top: 0;
-          width: 80px;
-          left: 24px;
-        }
-      }
-    }
-    .vue-sound__playback-time-wrapper {
-      position: relative;
-      display: inline-block;
-      background: $white;
-      height: 5px;
-      vertical-align: middle;
+  .progressBarContainer {
+    position: relative;
+    display: inline-block;
+    background: $white;
+    height: 5px;
+    vertical-align: middle;
+  }
 
-      .progressBar {
-          background: $green;
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-      }
-    }
+  .progressBar {
+      background: $green;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
   }
 
   .stop {
@@ -58,6 +31,22 @@
   }
 
   .pause {
+    background-image: url('../assets/images/pause.png');
+    background-repeat: no-repeat;
+    height: 50px;
+    width:53px;
+    display:inline-block;
+  }
+
+  .download {
+    background-image: url('../assets/images/download.png');
+    background-repeat: no-repeat;
+    height: 50px;
+    width:53px;
+    display:inline-block;
+  }
+
+  .mute {
     background-image: url('../assets/images/pause.png');
     background-repeat: no-repeat;
     height: 50px;

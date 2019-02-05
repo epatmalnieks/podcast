@@ -3,18 +3,16 @@
     <div class="audioPlayer">
       <div @click="stop()" class="stop"></div>
       <div @click="pause()" :class="paused ? 'play' : 'pause'"></div>
-      <div v-on:click="setPosition" :class="`vue-sound__playback-time-wrapper`">
+      <div v-on:click="setPosition" class="progressBarContainer">
           <div v-bind:style="progressStyle" class="progressBar"></div>
           <span style="color: white">{{currentTime}}</span>
           <span style="color: white">{{duration}}</span>
       </div>
-      <div class="options">
-        <a style="color: white" @click="download()">download</a>
+        <div class="download" @click="download()"></div>
         <a style="color: white" @click="mute()" :class="[isMuted ? 'icon-volume-mute2': 'icon-volume-high' ]">mute</a>
-        <a v-on:mouseover="toggleVolume()" class="volume-toggle">
+        <a v-on:mouseover="toggleVolume()">
           <input orient="vertical" v-model.lazy="volumeValue" v-on:change="updateVolume()" v-show="hideVolumeSlider" type="range" min="0" max="100" class="volume-slider"/>
         </a>
-      </div>
     </div>
     <audio v-bind:id="playerId" :src="file" style="display:none;"></audio>
   </div>
