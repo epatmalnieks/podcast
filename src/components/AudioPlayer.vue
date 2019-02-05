@@ -48,7 +48,7 @@ export default {
       currentTime: '00:00',
       audio: undefined,
       totalDuration: 0,
-      volumeValue: 7.5,
+      volumeValue: 70,
     };
   },
   methods: {
