@@ -1,6 +1,5 @@
 .navButton {
-  color: $white;
-  opacity: 0.9;
+  @extend %whiteFont;
   background-color: $black;
   border: none;
   text-align: center;

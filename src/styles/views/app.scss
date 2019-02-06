@@ -10,16 +10,14 @@ body {
 
 h1{
   margin: 0;
-  color: $white;
-  opacity: 0.9;
+    @extend %whiteFont;
   font-size: 36px;
   width: 33%;
 }
 
 h2 {
   margin: 0 10px 10px 10px;
-  color: $white;
-  opacity: 0.9;
+    @extend %whiteFont;
   font-size: 28px;
   padding-bottom: 5px;
   border-bottom: 1px solid $green;
@@ -28,22 +26,19 @@ h2 {
 
 h3 {
   margin: 20px 10px 10px 10px;
-  color: $white;
-  opacity: 0.9;
+    @extend %whiteFont;
   font-size: 20px;
 }
 
 h4 {
   margin: 0;
-  color: $white;
-  opacity: 0.9;
+    @extend %whiteFont;
   font-size: 16px;
 }
 
 p {
   margin: 10px;
-  color: $white;
-  opacity: 0.9;
+    @extend %whiteFont;
   font-size: 16px;
 }
 
