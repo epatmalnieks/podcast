@@ -4,6 +4,7 @@
     <div class="slogan">
       <p>A podcast with 78% sports and 22% nonsense.</p>
     </div>
+    <h1 style="display:none">78% Sports</h1>
     <img class="logo" alt="78% Sports" src="../assets/images/78percentsports.png"/>
     <router-view/>
   </div>
