@@ -1,10 +1,6 @@
 import sinon from 'sinon';
-import {
-  expect,
-} from 'chai';
-import {
-  shallowMount,
-} from '@vue/test-utils';
+import { expect } from 'chai';
+import { shallowMount } from '@vue/test-utils';
 import HomeComponent from '@/views/Home.vue';
 
 let vm;
@@ -17,9 +13,7 @@ function mountComponent() {
       $router,
     },
   });
-  ({
-    vm,
-  } = HomeComponentInstance);
+  ({ vm } = HomeComponentInstance);
 }
 
 const resetData = () => {
