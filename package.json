@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test": "vue-cli-service test:unit",
+    "test": "nyc vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "postinstall": "npm run build",
     "start": "node server.js"
@@ -25,9 +25,11 @@
     "@vue/eslint-config-airbnb": "4.0.0",
     "@vue/test-utils": "1.0.0-beta.20",
     "babel-eslint": "10.0.1",
+    "babel-plugin-istanbul": "^5.1.0",
     "chai": "4.1.2",
     "eslint": "5.8.0",
     "eslint-plugin-vue": "5.0.0",
+    "istanbul-instrumenter-loader": "^3.0.1",
     "node-sass": "4.9.0",
     "sass-loader": "7.0.1",
     "sinon": "7.2.3",
@@ -38,5 +40,29 @@
   "engines": {
     "node": "10.15.0",
     "npm": "6.5.0"
-  }
+  },
+  "nyc": {
+   "check-coverage": true,
+   "per-file": true,
+   "lines": 90,
+   "statements": 90,
+   "functions": 90,
+   "branches": 90,
+   "include": [
+     "src/**/*.{js,vue}"
+   ],
+   "exclude": [
+     "src/*.js"
+   ],
+   "reporter": [
+     "lcov",
+     "text",
+     "text-summary"
+   ],
+   "extension": [
+     ".js"
+   ],
+   "cache": true,
+   "all": true
+ }
 }
