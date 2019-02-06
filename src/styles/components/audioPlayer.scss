@@ -19,15 +19,13 @@
   }
 
   .currentTime {
-    color: $white;
-    opacity: 0.9;
+    @extend %whiteFont;
     float: left;
     margin-top: 5px;
   }
 
   .duration {
-    color: $white;
-    opacity: 0.9;
+    @extend %whiteFont;
     float: right;
     margin-top: 5px;
   }
