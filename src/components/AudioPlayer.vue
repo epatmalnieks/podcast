@@ -16,11 +16,6 @@
 </template>
 
 <script>
-export const convertTimeHHMMSS = (val) => {
-  const hhmmss = new Date(val * 1000).toISOString().substr(11, 8);
-  return (hhmmss.indexOf('00:') === 0) ? hhmmss.substr(3) : hhmmss;
-};
-
 export default {
   name: 'AudioPlayer',
   props: {
@@ -29,14 +24,6 @@ export default {
     },
     index: {
       type: Number,
-    },
-  },
-  computed: {
-    duration() {
-      return this.audio ? convertTimeHHMMSS(this.totalDuration) : '';
-    },
-    playerId() {
-      return `audioPlayer-${this.index}`;
     },
   },
   data() {
@@ -51,8 +38,20 @@ export default {
       volumeValue: 70,
     };
   },
+  computed: {
+    duration() {
+      return this.audio ? this.convertTimeHHMMSS(this.totalDuration) : '';
+    },
+    playerId() {
+      return `audioPlayer-${this.index}`;
+    },
+  },
   methods: {
-    setPosition: function name(e) {
+    convertTimeHHMMSS(val) {
+     const hhmmss = new Date(val * 1000).toISOString().substr(11, 8);
+     return (hhmmss.indexOf('00:') === 0) ? hhmmss.substr(3) : hhmmss;
+   },
+    setPosition(e) {
       const tag = e.target;
       if (this.paused) return;
 
@@ -111,7 +110,7 @@ export default {
       const currTime = parseInt(this.audio.currentTime, 10);
       const percentage = parseInt((currTime / this.totalDuration) * 100, 10);
       this.progressStyle = `width:${percentage}%;`;
-      this.currentTime = convertTimeHHMMSS(currTime);
+      this.currentTime = this.convertTimeHHMMSS(currTime);
     },
     handlePlayPause(e) {
       if (e.type === 'pause' && this.playing === false) {
