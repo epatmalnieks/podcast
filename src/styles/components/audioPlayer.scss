@@ -8,6 +8,7 @@
     opacity: 0.9;
     height: 5px;
     border-radius: 5px;
+    cursor: pointer;
   }
 
   .progressBar {
@@ -41,6 +42,7 @@
     height: 50px;
     width:53px;
     display:inline-block;
+    cursor: pointer;
   }
 
   .stop {
@@ -73,7 +75,7 @@ $track-height: 2px;
 $track-radius: 5px;
 
 @mixin track {
-  cursor: default;
+  cursor: pointer;
   height: $track-height;
   transition: all .2s ease;
   width: $track-width;
@@ -82,7 +84,7 @@ $track-radius: 5px;
 @mixin thumb($adjustment: 0) {
   background: $thumb-color;
   border-radius: $thumb-radius;
-  cursor: default;
+  cursor: pointer;
   height: $thumb-height + $adjustment;
   width: $thumb-width + $adjustment;
 }
