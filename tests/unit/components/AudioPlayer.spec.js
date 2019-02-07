@@ -89,5 +89,92 @@ describe('#AudioPlayerComponent', () => {
         expect(vm.convertTimeHHMMSS('123')).to.equal('02:03');
       });
     });
+
+    describe('#setPosition', () => {
+      it('should do nothing if the audio is paused', () => {
+        mountComponent();
+        vm.audio.currentTime = 0;
+        vm.setPosition({ target: 'someTarget' });
+        expect(vm.audio.currentTime).to.equal(0);
+      });
+
+      it('should do nothing if the target is a span', () => {
+        mountComponent();
+        vm.audio.currentTime = 0;
+        vm.paused = false;
+        vm.setPosition({ target: { tagName: 'SPAN' } });
+        expect(vm.audio.currentTime).to.equal(0);
+      });
+
+      xit('should set the current time of the audio to the position', () => {
+        mountComponent();
+        vm.audio.currentTime = 0;
+        vm.paused = false;
+        vm.setPosition({
+          target: {
+            tagName: 'SPAN',
+            getBoundingClientRect: () => ({
+              left: 20,
+              width: 200,
+            }),
+          },
+          clientX: 400,
+        });
+        expect(vm.audio.currentTime).to.equal(0);
+      });
+    });
+
+    describe('#updateVolume', () => {
+      it('should set the audio volume to the volume value divided by 100', () => {
+        mountComponent();
+        vm.volumeValue = 45;
+        vm.updateVolume();
+        expect(vm.audio.volume).to.equal(0.45);
+      });
+
+      it('should set muted to false if the volume is above 0', () => {
+        mountComponent();
+        vm.volumeValue = 45;
+        vm.updateVolume();
+        expect(vm.audio.muted).to.equal(false);
+      });
+
+      it('should set muted to true if the volume is 0', () => {
+        mountComponent();
+        vm.volumeValue = 0;
+        vm.updateVolume();
+        expect(vm.audio.muted).to.equal(true);
+      });
+    });
+
+    describe('#stop', () => {
+      it('should set playing to false', () => {
+        mountComponent();
+        vm.playing = true;
+        vm.stop();
+        expect(vm.playing).to.equal(false);
+      });
+
+      it('should set paused to true', () => {
+        mountComponent();
+        vm.paused = false;
+        vm.stop();
+        expect(vm.paused).to.equal(true);
+      });
+
+      it('should call the audio pause function', () => {
+        mountComponent();
+        const spy = sandbox.spy(vm.audio, 'pause');
+        vm.stop();
+        expect(spy.called).to.equal(true);
+      });
+
+      it('should set the audio current time to 0', () => {
+        mountComponent();
+        vm.audio.currentTime = 132412;
+        vm.stop();
+        expect(vm.audio.currentTime).to.equal(0);
+      });
+    });
   });
 });
