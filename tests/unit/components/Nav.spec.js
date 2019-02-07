@@ -16,13 +16,7 @@ function mountComponent() {
   ({ vm } = NavComponentInstance);
 }
 
-const resetData = () => {
-
-};
-
-describe('#Nav', () => {
-  before(resetData);
-
+describe('#NavComponent', () => {
   beforeEach(() => {
     sandbox = sinon.createSandbox();
     $router.push = sandbox.stub();
@@ -30,6 +24,13 @@ describe('#Nav', () => {
 
   afterEach(() => {
     sandbox.restore();
+  });
+
+  describe('#data', () => {
+    it('should have correct data', () => {
+      mountComponent();
+      expect(vm.selectedRoute).to.equal('/');
+    });
   });
 
   describe('#methods', () => {
@@ -46,6 +47,38 @@ describe('#Nav', () => {
         mountComponent();
         vm.goToBios();
         expect(vm.selectedRoute).to.equal('bios');
+      });
+    });
+
+    describe('#goToArchive', () => {
+      it('should go to the archive page', () => {
+        mountComponent();
+        vm.goToArchive();
+        expect($router.push.args[0][0]).to.deep.equal({
+          name: 'archive',
+        });
+      });
+
+      it('should set the selected route to archive', () => {
+        mountComponent();
+        vm.goToArchive();
+        expect(vm.selectedRoute).to.equal('archive');
+      });
+    });
+
+    describe('#goToHome', () => {
+      it('should go to the home page', () => {
+        mountComponent();
+        vm.goToHome();
+        expect($router.push.args[0][0]).to.deep.equal({
+          name: 'home',
+        });
+      });
+
+      it('should set the selected route to /', () => {
+        mountComponent();
+        vm.goToHome();
+        expect(vm.selectedRoute).to.equal('/');
       });
     });
   });

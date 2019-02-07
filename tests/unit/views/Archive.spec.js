@@ -2,17 +2,17 @@ import sinon from 'sinon';
 import { expect } from 'chai';
 import { shallowMount } from '@vue/test-utils';
 import podcastList from '@/assets/podcastList.json';
-import HomeView from '@/views/Home.vue';
+import ArchiveView from '@/views/Archive.vue';
 
 let vm;
 let sandbox;
 
 function mountComponent() {
-  const HomeViewInstance = shallowMount(HomeView, {});
-  ({ vm } = HomeViewInstance);
+  const ArchiveViewInstance = shallowMount(ArchiveView, {});
+  ({ vm } = ArchiveViewInstance);
 }
 
-describe('#HomeView', () => {
+describe('#ArchiveView', () => {
   beforeEach(() => {
     sandbox = sinon.createSandbox();
   });
@@ -24,8 +24,7 @@ describe('#HomeView', () => {
   describe('#data', () => {
     it('should have correct data', () => {
       mountComponent();
-      const mostRecentPodcasts = podcastList.podcasts.slice(0, 5);
-      expect(vm.recentPodcasts).to.deep.equal(mostRecentPodcasts);
+      expect(vm.allPodcasts).to.deep.equal(podcastList.podcasts);
     });
   });
 });
