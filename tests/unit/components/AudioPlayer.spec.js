@@ -76,4 +76,18 @@ describe('#AudioPlayerComponent', () => {
       });
     });
   });
+
+  describe('#methods', () => {
+    describe('#convertTimeHHMMSS', () => {
+      it('should convert time from seconds to HHMMSS', () => {
+        mountComponent();
+        expect(vm.convertTimeHHMMSS('12345')).to.equal('03:25:45');
+      });
+
+      it('should remove the hours portion if the duration is less than one hour', () => {
+        mountComponent();
+        expect(vm.convertTimeHHMMSS('123')).to.equal('02:03');
+      });
+    });
+  });
 });
