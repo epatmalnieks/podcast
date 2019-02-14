@@ -3,6 +3,7 @@
     <h3>{{podcast.title}}</h3>
     <p>{{podcast.date}}</p>
     <p>{{podcast.summary}}</p>
+    <p class="musicCredit">Music: {{podcast.music.song}} by {{podcast.music.artist}}</p>
     <audio-player :file="podcast.src" :index="index"></audio-player>
   </div>
 </template>
