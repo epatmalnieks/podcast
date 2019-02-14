@@ -1,5 +1,9 @@
 .audioPlayer{
-  margin-top: 15px;
+  width: 275px;
+  margin: 15px auto 0;
+  padding: 15px 15px 0px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px $green;
 }
 
   .progressBarContainer {
@@ -17,6 +21,7 @@
       top: 0;
       left: 0;
       bottom: 0;
+      border-radius: 5px;
   }
 
   .currentTime {
@@ -33,7 +38,6 @@
 
   .audioPlayerButtonsContainer{
     clear: both;
-    text-align: center;
   }
 
   %audioPlayerButton {
