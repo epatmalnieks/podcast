@@ -6,22 +6,6 @@
 body {
   font-family: 'OpenSans-Regular';
   background-color: $black;
-
-  @include screen('x-small'){
-    background-color: blue;
-  }
-  @include screen('small'){
-    background-color: green;
-  }
-  @include screen('medium'){
-    background-color: yellow;
-  }
-  @include screen('large'){
-    background-color: pink;
-  }
-  @include screen('x-large'){
-    background-color: orange;
-  }
 }
 
 h1{
