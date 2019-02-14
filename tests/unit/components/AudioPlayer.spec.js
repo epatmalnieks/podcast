@@ -210,5 +210,32 @@ describe('#AudioPlayerComponent', () => {
         expect(spy.called).to.equal(true);
       });
     });
+
+    describe('#pause', () => {
+      it('should flip paused', () => {
+        mountComponent();
+        vm.paused = false;
+        vm.pause();
+        expect(vm.paused).to.equal(true);
+        vm.pause();
+        expect(vm.paused).to.equal(false);
+      });
+
+      it('should call the audio pause function if it is paused', () => {
+        mountComponent();
+        vm.paused = false;
+        const spy = sandbox.spy(vm.audio, 'pause');
+        vm.pause();
+        expect(spy.called).to.equal(true);
+      });
+
+      it('should call the audio play function if it is not paused', () => {
+        mountComponent();
+        vm.paused = true;
+        const spy = sandbox.spy(vm.audio, 'play');
+        vm.pause();
+        expect(spy.called).to.equal(true);
+      });
+    });
   });
 });
