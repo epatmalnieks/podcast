@@ -6,6 +6,22 @@
 body {
   font-family: 'OpenSans-Regular';
   background-color: $black;
+
+  @include screen('x-small'){
+    background-color: blue;
+  }
+  @include screen('small'){
+    background-color: green;
+  }
+  @include screen('medium'){
+    background-color: yellow;
+  }
+  @include screen('large'){
+    background-color: pink;
+  }
+  @include screen('x-large'){
+    background-color: orange;
+  }
 }
 
 h1{
@@ -52,14 +68,3 @@ p {
   float: right;
   width: 190px;
 }
-
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {}
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {}
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {}
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {}
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
