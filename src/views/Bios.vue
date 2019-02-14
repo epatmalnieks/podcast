@@ -26,8 +26,6 @@
 <script>
 export default {
   name: 'Bios',
-  methods: {
-  },
 };
 </script>
 
