@@ -176,5 +176,39 @@ describe('#AudioPlayerComponent', () => {
         expect(vm.audio.currentTime).to.equal(0);
       });
     });
+
+    describe('#play', () => {
+      it('should do nothing if it is already playing and not paused', () => {
+        mountComponent();
+        vm.playing = true;
+        vm.paused = false;
+        vm.play();
+        expect(vm.playing).to.equal(true);
+        expect(vm.paused).to.equal(false);
+      });
+
+      it('should set paused to false', () => {
+        mountComponent();
+        vm.playing = false;
+        vm.paused = true;
+        vm.play();
+        expect(vm.paused).to.equal(false);
+      });
+
+      it('should set playing to true', () => {
+        mountComponent();
+        vm.playing = false;
+        vm.paused = true;
+        vm.play();
+        expect(vm.playing).to.equal(true);
+      });
+
+      it('should call the audio play function', () => {
+        mountComponent();
+        const spy = sandbox.spy(vm.audio, 'play');
+        vm.play();
+        expect(spy.called).to.equal(true);
+      });
+    });
   });
 });
