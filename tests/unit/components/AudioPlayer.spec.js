@@ -176,5 +176,66 @@ describe('#AudioPlayerComponent', () => {
         expect(vm.audio.currentTime).to.equal(0);
       });
     });
+
+    describe('#play', () => {
+      it('should do nothing if it is already playing and not paused', () => {
+        mountComponent();
+        vm.playing = true;
+        vm.paused = false;
+        vm.play();
+        expect(vm.playing).to.equal(true);
+        expect(vm.paused).to.equal(false);
+      });
+
+      it('should set paused to false', () => {
+        mountComponent();
+        vm.playing = false;
+        vm.paused = true;
+        vm.play();
+        expect(vm.paused).to.equal(false);
+      });
+
+      it('should set playing to true', () => {
+        mountComponent();
+        vm.playing = false;
+        vm.paused = true;
+        vm.play();
+        expect(vm.playing).to.equal(true);
+      });
+
+      it('should call the audio play function', () => {
+        mountComponent();
+        const spy = sandbox.spy(vm.audio, 'play');
+        vm.play();
+        expect(spy.called).to.equal(true);
+      });
+    });
+
+    describe('#pause', () => {
+      it('should flip paused', () => {
+        mountComponent();
+        vm.paused = false;
+        vm.pause();
+        expect(vm.paused).to.equal(true);
+        vm.pause();
+        expect(vm.paused).to.equal(false);
+      });
+
+      it('should call the audio pause function if it is paused', () => {
+        mountComponent();
+        vm.paused = false;
+        const spy = sandbox.spy(vm.audio, 'pause');
+        vm.pause();
+        expect(spy.called).to.equal(true);
+      });
+
+      it('should call the audio play function if it is not paused', () => {
+        mountComponent();
+        vm.paused = true;
+        const spy = sandbox.spy(vm.audio, 'play');
+        vm.pause();
+        expect(spy.called).to.equal(true);
+      });
+    });
   });
 });
