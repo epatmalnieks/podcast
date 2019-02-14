@@ -52,3 +52,18 @@ p {
   float: right;
   width: 190px;
 }
+
+#app {
+  @include screen('medium'){
+    width: 50%;
+    margin: 0 auto;
+  }
+  @include screen('large'){
+    width: 50%;
+    margin: 0 auto;
+  }
+  @include screen('x-large'){
+    width: 50%;
+    margin: 0 auto;
+  }
+}
