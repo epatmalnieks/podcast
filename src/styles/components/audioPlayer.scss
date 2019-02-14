@@ -52,21 +52,33 @@
   .stop {
     @extend %audioPlayerButton;
     background-image: url('../assets/images/stop.png');
+    &:active {
+        transform: translate(1px, 1px);
+      }
   }
 
   .play {
     @extend %audioPlayerButton;
     background-image: url('../assets/images/play.png');
+    &:active {
+        transform: translate(1px, 1px);
+      }
   }
 
   .pause {
     @extend %audioPlayerButton;
     background-image: url('../assets/images/pause.png');
+    &:active {
+        transform: translate(1px, 1px);
+      }
   }
 
   .download {
     @extend %audioPlayerButton;
     background-image: url('../assets/images/download.png');
+    &:active {
+        transform: translate(1px, 1px);
+      }
   }
 
 $thumb-color: $green;
