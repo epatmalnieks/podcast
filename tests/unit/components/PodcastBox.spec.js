@@ -18,6 +18,10 @@ const resetData = () => {
   propsData = {
     podcast: {
       something: 'test',
+      music: {
+        artist: 'someArtist',
+        song: 'someSong',
+      },
     },
     index: 1,
     numPodcasts: 4,
@@ -38,7 +42,13 @@ describe('#PodcastBoxComponent', () => {
   describe('#props', () => {
     it('should have correct props', () => {
       mountComponent();
-      expect(vm.podcast).to.deep.equal({ something: 'test' });
+      expect(vm.podcast).to.deep.equal({
+        something: 'test',
+        music: {
+          artist: 'someArtist',
+          song: 'someSong',
+        },
+      });
       expect(vm.index).to.equal(1);
       expect(vm.numPodcasts).to.equal(4);
     });
