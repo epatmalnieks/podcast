@@ -1,54 +1,8 @@
 {
   "podcasts": [{
-      "title": "Podcast 1",
-      "date": "1/21/2019",
-      "summary": "This is somewhat of a small summary",
-      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/this_is_a_podcast.mp3",
-      "music": {
-        "artist": "Black Ant",
-        "song": "5 Piece"
-      }
-    }, {
-      "title": "Podcast 2",
-      "date": "1/22/2019",
-      "summary": "This summary is going to be really long and could contain a bunch of crap. Not sure if I want to limit this yet or not. Here is more info. And here is even more info after that to get the spacing right.",
-      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/this_is_a_podcast.mp3",
-      "music": {
-        "artist": "Black Ant",
-        "song": "5 Piece"
-      }
-    }, {
-      "title": "Podcast 3",
-      "date": "1/23/2019",
-      "summary": "Summary 3",
-      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/this_is_a_podcast.mp3",
-      "music": {
-        "artist": "Black Ant",
-        "song": "5 Piece"
-      }
-    }, {
-      "title": "Podcast 4",
-      "date": "1/24/2019",
-      "summary": "Summary 4",
-      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/this_is_a_podcast.mp3",
-      "music": {
-        "artist": "Black Ant",
-        "song": "5 Piece"
-      }
-    }, {
-      "title": "Podcast 5",
-      "date": "1/25/2019",
-      "summary": "Summary 5",
-      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/this_is_a_podcast.mp3",
-      "music": {
-        "artist": "Black Ant",
-        "song": "5 Piece"
-      }
-    },
-    {
-      "title": "Podcast 6",
-      "date": "1/27/2019",
-      "summary": "Summary 6",
+      "title": "Podcast #1",
+      "date": "2/20/2019",
+      "summary": "Our first podcast! We talk about what to expect on the show now and in the future. Then, we give fantasy baseball draft strategy advice: What to watch out for, tips & tricks, what not to do, and more. Lastly, we discuss the potential MLB rule changes for the upcoming season and beyond.",
       "src": "https://s3.us-east-2.amazonaws.com/78percentsports/this_is_a_podcast.mp3",
       "music": {
         "artist": "Black Ant",
