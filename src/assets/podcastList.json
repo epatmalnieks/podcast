@@ -2,7 +2,7 @@
   "podcasts": [{
       "title": "Podcast #1",
       "date": "2/20/2019",
-      "summary": "Our first podcast! We talk about what to expect on the show now and in the future. Then, we give fantasy baseball draft strategy advice: What to watch out for, tips & tricks, what not to do, and more. Lastly, we discuss the potential MLB rule changes for the upcoming season and beyond.",
+      "summary": "Our first podcast! We talk about what to expect on the show now and in the future. Then, we give fantasy baseball draft advice: What to watch out for, tips & tricks, what not to do, and more. Lastly, we discuss the potential MLB rule changes for the upcoming season and beyond.",
       "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_2_21_2019.mp3",
       "music": {
         "artist": "Black Ant",
