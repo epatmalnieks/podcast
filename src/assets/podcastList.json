@@ -1,13 +1,21 @@
 {
   "podcasts": [{
-      "title": "Podcast #1",
-      "date": "2/20/2019",
-      "summary": "Our first podcast! We talk about what to expect on the show now and in the future. Then, we give fantasy baseball draft advice: What to watch out for, tips & tricks, what not to do, and more. Lastly, we discuss the potential MLB rule changes for the upcoming season and beyond.",
-      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_2_21_2019.mp3",
-      "music": {
-        "artist": "Black Ant",
-        "song": "5 Piece"
-      }
+    "title": "Contenders, Pretenders, Studs & Duds",
+    "date": "2/28/2019",
+    "summary": "Two new segments get introduced to the show - \"Contender or Pretender?\" and \"Studs & Duds.\" If the NBA playoffs started today, we determine which teams would be real contenders for the championship or phony pretenders. Studs & Duds involves us examining the top 10 fantasy baseball players at each position and determining a \"Stud\" who will have a great year and a \"Dud\" who will have a terrible year. And of course, a hilarious final question. Enjoy!",
+    "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_2_28_2019.mp3",
+    "music": {
+      "artist": "BOPD",
+      "song": "6.6.05"
     }
-  ]
+  }, {
+    "title": "Podcast #1",
+    "date": "2/21/2019",
+    "summary": "Our first podcast! We talk about what to expect on the show now and in the future. Then, we give fantasy baseball draft advice: What to watch out for, tips & tricks, what not to do, and more. Lastly, we discuss the potential MLB rule changes for the upcoming season and beyond.",
+    "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_2_21_2019.mp3",
+    "music": {
+      "artist": "Black Ant",
+      "song": "5 Piece"
+    }
+  }]
 }
