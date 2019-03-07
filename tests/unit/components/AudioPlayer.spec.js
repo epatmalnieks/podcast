@@ -112,7 +112,7 @@ describe('#AudioPlayerComponent', () => {
         vm.paused = false;
         vm.setPosition({
           target: {
-            tagName: 'SPAN',
+            tagName: 'audio',
             getBoundingClientRect: () => ({
               left: 20,
               width: 200,
@@ -235,6 +235,89 @@ describe('#AudioPlayerComponent', () => {
         const spy = sandbox.spy(vm.audio, 'play');
         vm.pause();
         expect(spy.called).to.equal(true);
+      });
+    });
+
+    describe('#download', () => {
+      it('should stop the audio', () => {
+        mountComponent();
+        const spy = sandbox.spy(vm, 'stop');
+        vm.download();
+        expect(spy.called).to.equal(true);
+      });
+
+      it('should open the file', () => {
+        mountComponent();
+        const spy = sandbox.stub(window, 'open');
+        vm.download();
+        expect(spy.args[0][0]).to.equal(vm.file);
+        expect(spy.args[0][1]).to.equal('download');
+      });
+    });
+
+    xdescribe('#handleLoaded', () => {
+      it('should call play if auto play is true', () => {
+        mountComponent();
+        vm.audio.readyState = 2;
+        const spy = sandbox.stub(vm, 'play');
+        vm.handleLoaded();
+        expect(spy.called).to.equal(true);
+      });
+    });
+
+    describe('#handlePlayingUI', () => {
+      it('should set the progress style', () => {
+        mountComponent();
+        vm.handlePlayingUI();
+        expect(vm.progressStyle).to.equal('width:NaN%;');
+      });
+
+      it('should set the current time', () => {
+        mountComponent();
+        vm.handlePlayingUI();
+        expect(vm.currentTime).to.equal('00:00');
+      });
+    });
+
+    describe('#handlePlayPause', () => {
+      it('should set the progress style to 0% width', () => {
+        const e = {
+          type: 'pause',
+        };
+        vm.playing = false;
+        mountComponent();
+        vm.handlePlayPause(e);
+        expect(vm.progressStyle).to.equal('width:0%;');
+      });
+
+      it('should set the current time to 00:00', () => {
+        const e = {
+          type: 'pause',
+        };
+        vm.playing = false;
+        mountComponent();
+        vm.handlePlayPause(e);
+        expect(vm.currentTime).to.equal('00:00');
+      });
+
+      it('should set paused to true', () => {
+        const e = {
+          type: 'pause',
+        };
+        vm.playing = false;
+        mountComponent();
+        vm.handlePlayPause(e);
+        expect(vm.paused).to.equal(true);
+      });
+
+      it('should do nothing if type is not pause and playing is not false', () => {
+        const e = {
+          type: 'play',
+        };
+        vm.playing = true;
+        mountComponent();
+        vm.handlePlayPause(e);
+        expect(vm.paused).to.equal(true);
       });
     });
   });
