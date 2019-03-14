@@ -1,5 +1,15 @@
 {
   "podcasts": [{
+    "title": "Our First Guest",
+    "date": "3/14/2019",
+    "summary": "Our first guest, Chris Sollars, joins us as we share some great stories, ranging from something that happened 10 minutes before the show to way back in high school. Get to know us better and gear up for some big laughs. No sports. All nonsense.",
+    "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_3_14_2019.mp3",
+    "music": {
+      "artist": "Jason Shaw",
+      "song": "South of the Border"
+    }
+  },
+    {
     "title": "Fantasy Baseball Sleepers & Keepers",
     "date": "3/7/2019",
     "summary": "Another new segment - \"Sleepers & Keepers.\" We give you two \"Sleepers\" from each position in baseball ranked outside of the top 10 that will have excellent years and help deliver your fantasy team a championship. A \"Keeper\" is a guy under the age of 25 that you'll want on your team for years to come. Take notes as we recommend one for each position.",
