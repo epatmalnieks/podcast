@@ -16,7 +16,7 @@
   }
 
   .progressBar {
-      background: $primary;
+      background: $secondary;
       position: absolute;
       top: 0;
       left: 0;
@@ -81,7 +81,7 @@
       }
   }
 
-$thumb-color: $primary;
+$thumb-color: $secondary;
 $thumb-radius: 10px;
 $thumb-height: 20px;
 $thumb-width: 20px;
