@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bios">
     <h2>Bios</h2>
     <p class="erik">
       <img class="biosImage" alt="Erik" src="../assets/images/erik.jpg"/>
