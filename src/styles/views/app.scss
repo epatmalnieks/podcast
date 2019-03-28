@@ -20,7 +20,7 @@ h2 {
     @extend %whiteFont;
   font-size: 28px;
   padding-bottom: 5px;
-  border-bottom: 1px solid $green;
+  border-bottom: 1px solid $primary;
   display: inline-block;
 }
 
@@ -43,8 +43,31 @@ p {
 }
 
 .logo {
-  height: 150px;
-  width: 150px;
+  @include screen('x-small'){
+    height: 114px;
+    width: 150px;
+    margin-top: 15px;
+  }
+  @include screen('small'){
+    height: 229px;
+    width: 300px;
+    margin-top: 15px;
+  }
+  @include screen('medium'){
+    height: 130px;
+    width: 170px;
+    margin-top: 15px;
+  }
+  @include screen('large'){
+    height: 191px;
+    width: 250px;
+    margin-top: 15px;
+  }
+  @include screen('x-large'){
+    height: 229px;
+    width: 300px;
+    margin-top: 15px;
+  }
 }
 
 .slogan {
