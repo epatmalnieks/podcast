@@ -3,7 +3,7 @@
   margin: 20px auto 0;
   padding: 15px 15px 0px 15px;
   border-radius: 10px;
-  box-shadow: 0 0 20px $green;
+  box-shadow: 0 0 20px $primary;
 }
 
   .progressBarContainer {
@@ -16,7 +16,7 @@
   }
 
   .progressBar {
-      background: $green;
+      background: $secondary;
       position: absolute;
       top: 0;
       left: 0;
@@ -81,7 +81,7 @@
       }
   }
 
-$thumb-color: $green;
+$thumb-color: $secondary;
 $thumb-radius: 10px;
 $thumb-height: 20px;
 $thumb-width: 20px;
