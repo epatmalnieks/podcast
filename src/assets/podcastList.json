@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+    "title": "20 Questions",
+    "date": "4/4/2019",
+    "summary": "We ask each other 20 of the most ridiculous, random, stupid, idiotic questions you could think of with a few sports questions thrown in to break up the total nonsense.",
+    "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_4_4_2019.mp3",
+    "music": {
+      "artist": "The Insider",
+      "song": "The Insider Theme"
+    }
+  },{
     "title": "2019 MLB Season Predictions",
     "date": "3/28/2019",
     "summary": "It's Opening Day 2019! In a baseball heavy episode, we predict the following for the American and National leagues: division winners, wild card teams, league winner, Cy Young winner, and MVP. The World Series winner is saved for last. Baseball is back!",
