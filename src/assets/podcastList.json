@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+    "title": "Game of Thrones & Sports Hodgepodge",
+    "date": "4/11/2019",
+    "summary": "With the Game of Thrones final season premiere airing this Sunday, we give our predictions for what will happen and who will end up claiming the iron throne when all is said and done. Sports Hodgepodge comes next with a bunch of random, quick topics occuring recently in the world of sports.",
+    "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_4_11_2019.mp3",
+    "music": {
+      "artist": "Mid-Air Machine",
+      "song": "Knowing Nothing"
+    }
+  },{
     "title": "20 Questions",
     "date": "4/4/2019",
     "summary": "We ask each other 20 of the most ridiculous, random, stupid, idiotic questions you could think of with a few sports questions thrown in to break up the total nonsense.",
@@ -15,7 +24,7 @@
     "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_3_28_2019.mp3",
     "music": {
       "artist": "Mid-Air Machine",
-      "song": "Appalachian Coal Mines {120 & 4/4}"
+      "song": "Appalachian Coal Mines"
     }
   },{
     "title": "NFL Free Agency & March Madness",
