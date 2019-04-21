@@ -2,7 +2,6 @@
 <div>
     <img class="navHamburger" @click="showMenu" src="../assets/images/menu.png"/>
   <div v-if="menuVisible" class="navMenu">
-    <img class="navHamburger" @click="showMenu" src="../assets/images/menu.png"/>
     <div class="navMenuItem" :class="{navButtonSelected: selectedRoute === '/'}" @click='goToHome'>
       Home
     </div>
