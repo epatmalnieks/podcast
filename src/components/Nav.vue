@@ -79,14 +79,14 @@ export default {
       this.$router.push({
         name: 'contactUs',
       });
-      this.selectedRoute = '/';
+      this.selectedRoute = 'contactUs';
       this.showMenu();
     },
     goToShop() {
       this.$router.push({
         name: 'shop',
       });
-      this.selectedRoute = '/';
+      this.selectedRoute = 'shop';
       this.showMenu();
     },
   },
