@@ -16,9 +16,9 @@ export default new Router({
     component: () => import('./views/Bios.vue'),
   },
   {
-    path: '/archive',
-    name: 'archive',
-    component: () => import('./views/Archive.vue'),
+    path: '/allPodcasts',
+    name: 'allPodcasts',
+    component: () => import('./views/AllPodcasts.vue'),
   },
   ],
 });

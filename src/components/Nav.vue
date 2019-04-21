@@ -7,9 +7,24 @@ Hamburger
     <button class="navHamburger" @click="showMenu">
   Hamburger
     </button>
+    <div class="navMenuItem" :class="{navButtonSelected: selectedRoute === '/'}" @click='goToHome'>
+      Home
+    </div>
+    <div class="navMenuItem" :class="{navButtonSelected: selectedRoute === 'allPodcasts'}" @click='goToAllPodcasts'>
+      All Podcasts
+    </div>
+    <div class="navMenuItem" :class="{navButtonSelected: selectedRoute === 'bios'}" @click='goToBios'>
+      Bios
+    </div>
+    <div class="navMenuItem" :class="{navButtonSelected: selectedRoute === '/contactUs'}" @click='goToContactUs'>
+      Contact Us
+    </div>
+    <div class="navMenuItem" :class="{navButtonSelected: selectedRoute === '/shop'}" @click='goToShop'>
+      Shop
+    </div>
   </div>
-  <div class="navButtonContainer" @click='goToArchive'>
-    <div class="navButton" :class="{navButtonSelected: selectedRoute === 'archive'}">Archive</div>
+  <div class="navButtonContainer" @click='goToAllPodcasts'>
+    <div class="navButton" :class="{navButtonSelected: selectedRoute === 'allPodcasts'}">All Podcasts</div>
   </div>
   <div class="navButtonContainer" @click='goToBios'>
     <div class="navButton" :class="{navButtonSelected: selectedRoute === 'bios'}">Bios</div>
@@ -45,15 +60,27 @@ export default {
       });
       this.selectedRoute = 'bios';
     },
-    goToArchive() {
+    goToAllPodcasts() {
       this.$router.push({
-        name: 'archive',
+        name: 'allPodcasts',
       });
-      this.selectedRoute = 'archive';
+      this.selectedRoute = 'allPodcasts';
     },
     goToHome() {
       this.$router.push({
         name: 'home',
+      });
+      this.selectedRoute = '/';
+    },
+    goToContactUs() {
+      this.$router.push({
+        name: 'contactUs',
+      });
+      this.selectedRoute = '/';
+    },
+    goToShop() {
+      this.$router.push({
+        name: 'shop',
       });
       this.selectedRoute = '/';
     },
