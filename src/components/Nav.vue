@@ -59,30 +59,35 @@ export default {
         name: 'bios',
       });
       this.selectedRoute = 'bios';
+      this.showMenu();
     },
     goToAllPodcasts() {
       this.$router.push({
         name: 'allPodcasts',
       });
       this.selectedRoute = 'allPodcasts';
+      this.showMenu();
     },
     goToHome() {
       this.$router.push({
         name: 'home',
       });
       this.selectedRoute = '/';
+      this.showMenu();
     },
     goToContactUs() {
       this.$router.push({
         name: 'contactUs',
       });
       this.selectedRoute = '/';
+      this.showMenu();
     },
     goToShop() {
       this.$router.push({
         name: 'shop',
       });
       this.selectedRoute = '/';
+      this.showMenu();
     },
   },
 };
