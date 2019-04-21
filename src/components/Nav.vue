@@ -1,7 +1,7 @@
 <template>
 <div>
-    <img class="navHamburger" @click="showMenu" src="../assets/images/menu.png"/>
-  <div v-if="menuVisible" class="navMenu">
+  <img class="navHamburger" @click="showMenu(true)" src="../assets/images/menu.png"/>
+  <div ref="navMenu" class="navMenu">
     <div class="navMenuItem" :class="{navButtonSelected: selectedRoute === '/'}" @click='goToHome'>
       Home
     </div>
@@ -42,47 +42,67 @@ export default {
   data() {
     return {
       selectedRoute: '/',
-      menuVisible: false,
     };
   },
   methods: {
-    showMenu() {
-      this.menuVisible = !this.menuVisible;
+    showMenu(menuVisible) {
+      if(menuVisible)
+      {
+        var elem = this.$refs.navMenu;
+        elem.style.display = 'block';
+       var pos = 100;
+       var id = setInterval(frame, 10);
+       function frame() {
+         if (pos == 50) {
+           this.menuVisible = true;
+           clearInterval(id);
+         } else {
+           pos = pos - 5;
+           elem.style.left = pos + '%';
+         }
+       }
+     }
+
+     if(!menuVisible)
+     {
+       var elem = this.$refs.navMenu;
+      elem.style.display = 'none';
+    }
     },
     goToBios() {
       this.$router.push({
         name: 'bios',
       });
       this.selectedRoute = 'bios';
-      this.showMenu();
+      this.showMenu(false);
     },
     goToAllPodcasts() {
       this.$router.push({
         name: 'allPodcasts',
       });
       this.selectedRoute = 'allPodcasts';
-      this.showMenu();
+      this.showMenu(false);
     },
     goToHome() {
       this.$router.push({
         name: 'home',
       });
       this.selectedRoute = '/';
-      this.showMenu();
+      this.showMenu(false);
     },
     goToContactUs() {
       this.$router.push({
         name: 'contactUs',
       });
       this.selectedRoute = 'contactUs';
-      this.showMenu();
+      this.showMenu(false);
     },
     goToShop() {
       this.$router.push({
         name: 'shop',
       });
       this.selectedRoute = 'shop';
-      this.showMenu();
+      this.showMenu(false);
     },
   },
 };
