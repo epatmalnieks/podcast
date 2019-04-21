@@ -4,7 +4,7 @@
 Hamburger
   </button>
   <div v-if="menuVisible" class="navMenu">
-    <button class="navHamburger" @click="showMenu">
+    <button class="navHamburgerInsideMenu" @click="showMenu">
   Hamburger
     </button>
     <div class="navMenuItem" :class="{navButtonSelected: selectedRoute === '/'}" @click='goToHome'>
@@ -16,10 +16,10 @@ Hamburger
     <div class="navMenuItem" :class="{navButtonSelected: selectedRoute === 'bios'}" @click='goToBios'>
       Bios
     </div>
-    <div class="navMenuItem" :class="{navButtonSelected: selectedRoute === '/contactUs'}" @click='goToContactUs'>
+    <div class="navMenuItem" :class="{navButtonSelected: selectedRoute === 'contactUs'}" @click='goToContactUs'>
       Contact Us
     </div>
-    <div class="navMenuItem" :class="{navButtonSelected: selectedRoute === '/shop'}" @click='goToShop'>
+    <div class="navMenuItem" :class="{navButtonSelected: selectedRoute === 'shop'}" @click='goToShop'>
       Shop
     </div>
   </div>
