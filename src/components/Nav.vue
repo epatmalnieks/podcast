@@ -1,6 +1,6 @@
 <template>
 <div>
-  <img class="navHamburger" @click="showMenu(true)" src="../assets/images/menu.png"/>
+  <img class="navHamburger" @click="showMenu(true)" src="../assets/images/menu.png" />
   <div ref="navMenu" class="navMenu">
     <div class="navMenuItem" :class="{navButtonSelected: selectedRoute === '/'}" @click='goToHome'>
       Home
@@ -45,64 +45,60 @@ export default {
     };
   },
   methods: {
-    showMenu(menuVisible) {
-      if(menuVisible)
-      {
-        var elem = this.$refs.navMenu;
-        elem.style.display = 'block';
-       var pos = 100;
-       var id = setInterval(frame, 10);
-       function frame() {
-         if (pos == 50) {
-           this.menuVisible = true;
-           clearInterval(id);
-         } else {
-           pos = pos - 5;
-           elem.style.left = pos + '%';
-         }
-       }
-     }
+    showMenu(shouldShowMenu) {
+      const elem = this.$refs.navMenu;
+      let intervalId = 0;
+      let pos = 100;
+      function slideNav() {
+        if (pos === 50) {
+          clearInterval(intervalId);
+        } else {
+          pos -= 5;
+          elem.style.left = `${pos}%`;
+          elem.style.display = 'block';
+        }
+      }
 
-     if(!menuVisible)
-     {
-       var elem = this.$refs.navMenu;
-      elem.style.display = 'none';
-    }
+      if (shouldShowMenu) {
+        intervalId = setInterval(slideNav, 10);
+      } else {
+        elem.style.display = 'none';
+      }
     },
     goToBios() {
       this.$router.push({
         name: 'bios',
       });
       this.selectedRoute = 'bios';
-      this.showMenu(false);
+      this.showMenu();
     },
     goToAllPodcasts() {
       this.$router.push({
         name: 'allPodcasts',
       });
       this.selectedRoute = 'allPodcasts';
-      this.showMenu(false);
+      this.showMenu();
     },
     goToHome() {
       this.$router.push({
         name: 'home',
       });
       this.selectedRoute = '/';
-      this.showMenu(false);
+      this.showMenu();
     },
     goToContactUs() {
       this.$router.push({
         name: 'contactUs',
       });
       this.selectedRoute = 'contactUs';
-      this.showMenu(false);
+      this.showMenu();
     },
     goToShop() {
       this.$router.push({
         name: 'shop',
       });
       this.selectedRoute = 'shop';
-      this.showMenu(false);
+      this.showMenu();
     },
   },
 };
