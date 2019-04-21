@@ -1,5 +1,13 @@
 <template>
 <div>
+  <button class="navHamburger" @click="showMenu">
+Hamburger
+  </button>
+  <div v-if="menuVisible" class="navMenu">
+    <button class="navHamburger" @click="showMenu">
+  Hamburger
+    </button>
+  </div>
   <div class="navButtonContainer" @click='goToArchive'>
     <div class="navButton" :class="{navButtonSelected: selectedRoute === 'archive'}">Archive</div>
   </div>
@@ -8,6 +16,12 @@
   </div>
   <div class="navButtonContainer" @click='goToHome'>
     <div class="navButton" :class="{navButtonSelected: selectedRoute === '/'}">Home</div>
+  </div>
+  <div class="navButtonContainer" @click='goToHome'>
+    <div class="navButton" :class="{navButtonSelected: selectedRoute === '/'}">Contact Us</div>
+  </div>
+  <div class="navButtonContainer" @click='goToHome'>
+    <div class="navButton" :class="{navButtonSelected: selectedRoute === '/'}">Shop</div>
   </div>
 </div>
 </template>
@@ -18,9 +32,13 @@ export default {
   data() {
     return {
       selectedRoute: '/',
+      menuVisible: false,
     };
   },
   methods: {
+    showMenu() {
+      this.menuVisible = !this.menuVisible;
+    },
     goToBios() {
       this.$router.push({
         name: 'bios',
