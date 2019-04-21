@@ -1,12 +1,8 @@
 <template>
 <div>
-  <button class="navHamburger" @click="showMenu">
-Hamburger
-  </button>
+    <img class="navHamburger" @click="showMenu" src="../assets/images/menu.png"/>
   <div v-if="menuVisible" class="navMenu">
-    <button class="navHamburgerInsideMenu" @click="showMenu">
-  Hamburger
-    </button>
+    <img class="navHamburger" @click="showMenu" src="../assets/images/menu.png"/>
     <div class="navMenuItem" :class="{navButtonSelected: selectedRoute === '/'}" @click='goToHome'>
       Home
     </div>
@@ -23,7 +19,7 @@ Hamburger
       Shop
     </div>
   </div>
-  <div class="navButtonContainer" @click='goToAllPodcasts'>
+  <!-- <div class="navButtonContainer" @click='goToAllPodcasts'>
     <div class="navButton" :class="{navButtonSelected: selectedRoute === 'allPodcasts'}">All Podcasts</div>
   </div>
   <div class="navButtonContainer" @click='goToBios'>
@@ -37,7 +33,7 @@ Hamburger
   </div>
   <div class="navButtonContainer" @click='goToHome'>
     <div class="navButton" :class="{navButtonSelected: selectedRoute === '/'}">Shop</div>
-  </div>
+  </div> -->
 </div>
 </template>
 
