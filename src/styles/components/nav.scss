@@ -1,23 +1,17 @@
-.navButton {
-  @extend %whiteFont;
-  background-color: $black;
-  border: none;
-  text-align: center;
-  margin: 20px 10px;
-  padding-bottom: 5px;
-  cursor: pointer;
-}
-
-.navButtonSelected {
-  background-color: $secondary;
-}
-
-.navButtonContainer {
-  float:right;
-}
-
 .navHamburger {
   float:right;
+
+  @include screen('medium'){
+    display: none;
+  }
+
+  @include screen('large'){
+    display: none;
+  }
+
+  @include screen('x-large'){
+    display: none;
+  }
 }
 
 .navMenu {
@@ -37,4 +31,35 @@
   clear:both;
   white-space: nowrap;
   @extend %whiteFont;
+}
+
+.navMenuItemSelected {
+  background-color: $secondary;
+}
+
+.navButtons {
+  padding-bottom: 5px;
+  border-bottom: 1px solid $tertiary;
+  @include screen('x-small'){
+    display: none;
+  }
+
+  @include screen('small'){
+    display: none;
+  }
+}
+
+.navButton {
+  @extend %whiteFont;
+  font-size: 16px;
+  background-color: $black;
+  border: none;
+  width: 20%;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.navButtonSelected {
+  background-color: $secondary;
 }

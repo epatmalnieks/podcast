@@ -2,37 +2,39 @@
 <div>
   <img class="navHamburger" @click="showMenu(true)" src="../assets/images/menu.png" />
   <div ref="navMenu" class="navMenu">
-    <div class="navMenuItem" :class="{navButtonSelected: selectedRoute === '/'}" @click='goToHome'>
+    <div class="navMenuItem" :class="{navMenuItemSelected: selectedRoute === '/'}" @click='goToHome'>
       Home
     </div>
-    <div class="navMenuItem" :class="{navButtonSelected: selectedRoute === 'allPodcasts'}" @click='goToAllPodcasts'>
+    <div class="navMenuItem" :class="{navMenuItemSelected: selectedRoute === 'allPodcasts'}" @click='goToAllPodcasts'>
       All Podcasts
     </div>
-    <div class="navMenuItem" :class="{navButtonSelected: selectedRoute === 'bios'}" @click='goToBios'>
+    <div class="navMenuItem" :class="{navMenuItemSelected: selectedRoute === 'bios'}" @click='goToBios'>
       Bios
     </div>
-    <div class="navMenuItem" :class="{navButtonSelected: selectedRoute === 'contactUs'}" @click='goToContactUs'>
+    <div class="navMenuItem" :class="{navMenuItemSelected: selectedRoute === 'contactUs'}" @click='goToContactUs'>
       Contact Us
     </div>
-    <div class="navMenuItem" :class="{navButtonSelected: selectedRoute === 'shop'}" @click='goToShop'>
+    <div class="navMenuItem" :class="{navMenuItemSelected: selectedRoute === 'shop'}" @click='goToShop'>
       Shop
     </div>
   </div>
-  <!-- <div class="navButtonContainer" @click='goToAllPodcasts'>
-    <div class="navButton" :class="{navButtonSelected: selectedRoute === 'allPodcasts'}">All Podcasts</div>
+  <div class="navButtons">
+    <button class="navButton" :class="{navButtonSelected: selectedRoute === '/'}" @click='goToHome'>
+      Home
+    </button>
+    <button class="navButton" :class="{navButtonSelected: selectedRoute === 'allPodcasts'}" @click='goToAllPodcasts'>
+      All Podcasts
+    </button>
+    <button class="navButton" :class="{navButtonSelected: selectedRoute === 'bios'}" @click='goToBios'>
+      Bios
+    </button>
+    <button class="navButton" :class="{navButtonSelected: selectedRoute === 'contactUs'}" @click='goToContactUs'>
+      Contact Us
+    </button>
+    <button class="navButton" :class="{navButtonSelected: selectedRoute === 'shop'}" @click='goToShop'>
+      Shop
+    </button>
   </div>
-  <div class="navButtonContainer" @click='goToBios'>
-    <div class="navButton" :class="{navButtonSelected: selectedRoute === 'bios'}">Bios</div>
-  </div>
-  <div class="navButtonContainer" @click='goToHome'>
-    <div class="navButton" :class="{navButtonSelected: selectedRoute === '/'}">Home</div>
-  </div>
-  <div class="navButtonContainer" @click='goToHome'>
-    <div class="navButton" :class="{navButtonSelected: selectedRoute === '/'}">Contact Us</div>
-  </div>
-  <div class="navButtonContainer" @click='goToHome'>
-    <div class="navButton" :class="{navButtonSelected: selectedRoute === '/'}">Shop</div>
-  </div> -->
 </div>
 </template>
 
