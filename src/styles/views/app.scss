@@ -42,6 +42,10 @@ p {
   font-size: 16px;
 }
 
+.pageMargin {
+  margin-top: 20px;
+}
+
 .logo {
   @include screen('x-small'){
     height: 114px;
@@ -71,22 +75,55 @@ p {
 }
 
 .slogan {
-  clear:both;
-  float: right;
-  width: 190px;
+  @include screen('x-small'){
+    clear:both;
+    float: right;
+    width: 190px;
+  }
+  @include screen('small'){
+    float: right;
+    width: 190px;
+  }
+  @include screen('medium'){
+    float: right;
+    margin-top: 35px;
+    width: 350px;
+  }
+  @include screen('large'){
+    float: right;
+    margin-top: 35px;
+    width: 350px;
+  }
+  @include screen('x-large'){
+    float: right;
+    margin-top: 35px;
+    width: 350px;
+  }
+}
+
+.sloganMessage {
+  @include screen('medium'){
+    font-size: 24px;
+  }
+  @include screen('large'){
+    font-size: 24px;
+  }
+  @include screen('x-large'){
+    font-size: 24px;
+  }
 }
 
 #app {
   @include screen('medium'){
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
   }
   @include screen('large'){
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
   }
   @include screen('x-large'){
-    width: 50%;
+    width: 65%;
     margin: 0 auto;
   }
 }

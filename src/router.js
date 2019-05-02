@@ -16,9 +16,19 @@ export default new Router({
     component: () => import('./views/Bios.vue'),
   },
   {
-    path: '/archive',
-    name: 'archive',
-    component: () => import('./views/Archive.vue'),
+    path: '/allPodcasts',
+    name: 'allPodcasts',
+    component: () => import('./views/AllPodcasts.vue'),
+  },
+  {
+    path: '/contactUs',
+    name: 'contactUs',
+    component: () => import('./views/ContactUs.vue'),
+  },
+  {
+    path: '/shop',
+    name: 'shop',
+    component: () => import('./views/Shop.vue'),
   },
   ],
 });
