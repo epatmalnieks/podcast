@@ -76,6 +76,7 @@ p {
 
 .slogan {
   @include screen('x-small'){
+    clear:both;
     float: right;
     width: 190px;
   }
