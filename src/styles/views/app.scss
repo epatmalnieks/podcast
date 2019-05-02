@@ -71,9 +71,41 @@ p {
 }
 
 .slogan {
-  clear:both;
-  float: right;
-  width: 190px;
+  @include screen('x-small'){
+    float: right;
+    width: 190px;
+  }
+  @include screen('small'){
+    float: right;
+    width: 190px;
+  }
+  @include screen('medium'){
+    float: right;
+    margin-top: 35px;
+    width: 350px;
+  }
+  @include screen('large'){
+    float: right;
+    margin-top: 35px;
+    width: 350px;
+  }
+  @include screen('x-large'){
+    float: right;
+    margin-top: 35px;
+    width: 350px;
+  }
+}
+
+.sloganMessage {
+  @include screen('medium'){
+    font-size: 24px;
+  }
+  @include screen('large'){
+    font-size: 24px;
+  }
+  @include screen('x-large'){
+    font-size: 24px;
+  }
 }
 
 #app {
