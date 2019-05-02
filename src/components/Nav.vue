@@ -51,6 +51,7 @@ export default {
       const elem = this.$refs.navMenu;
       let intervalId = 0;
       let pos = 100;
+
       function slideNav() {
         if (pos === 50) {
           clearInterval(intervalId);
@@ -102,6 +103,13 @@ export default {
       this.selectedRoute = 'shop';
       this.showMenu();
     },
+  },
+  mounted() {
+    const landingRoute = window.location.hash.split('/')[1]
+
+    this.selectedRoute = landingRoute ? landingRoute : '/';
+
+    this.showMenu();
   },
 };
 </script>
