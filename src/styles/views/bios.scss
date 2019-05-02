@@ -1,6 +1,10 @@
 .erik {
   border-bottom: 1px solid $tertiary;
   padding-bottom: 20px;
+
+  @include screen('x-large'){
+    padding-bottom: 50px;
+  }
 }
 
 .ryan {
