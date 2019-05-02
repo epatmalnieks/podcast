@@ -1,5 +1,23 @@
 {
   "podcasts": [{
+      "title": "2019 NFL Draft Results & The Battle of Winterfell",
+      "date": "5/2/2019",
+      "summary": "The NFL Draft has come and gone, so it's time to discuss yet again how badly the Detroit Lions screwed this one up. We talk about the other NFL teams as well, mainly the ones that had the most interesting drafts and admire how real, competent franchises operate. Then we discuss the mind blowing episode of Game of Thrones that contained the long-awaited Battle of Winterfell.",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_5_2_2019.mp3",
+      "music": {
+        "artist": "Stefan Kartenberg",
+        "song": "The Vendetta"
+      }
+    },{
+      "title": "April Check-In",
+      "date": "4/25/2019",
+      "summary": "April is possibly the busiest month of the year when it comes to sports, so we check in with each league to see what's going on. For the NBA, we talk about the Detroit Pistons getting swept. The NHL, we talk about Steve Yzerman's return to Detroit. We give our early impressions on the young MLB season. Then, we add a few last minute thoughts on the NFL draft. A great episode for fans of all sports!",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_4_25_2019.mp3",
+      "music": {
+        "artist": "Broke For Free",
+        "song": "Hella"
+      }
+    },{
     "title": "NFL Mock Draft 2019",
     "date": "4/18/2019",
     "summary": "Each of us did our own mock drafts for next week's NFL Draft. In this week's episode, we compare our results. Who goes number one overall? Who do the Detroit Lions take? What do the Oakland Raiders do with three first round picks? Tune in to find out!",
