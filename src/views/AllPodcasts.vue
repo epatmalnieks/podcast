@@ -1,5 +1,5 @@
 <template>
-  <div class="allPodcasts">
+  <div>
     <h2>All Podcasts</h2>
     <div v-for='(podcast, key) in allPodcasts' :key='key'>
       <podcast-box :podcast="podcast" :index="key" :numPodcasts="allPodcasts.length - 1"></podcast-box>

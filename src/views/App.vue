@@ -6,7 +6,9 @@
     </div>
     <h1 style="display:none">78% Sports</h1>
     <img class="logo" alt="78% Sports" src="../assets/images/78percentsports.png"/>
-    <router-view/>
+    <div class="pageMargin">
+      <router-view/>
+    </div>
   </div>
 </template>
 

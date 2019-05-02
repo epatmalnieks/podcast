@@ -1,10 +1,8 @@
 <template>
 <div>
-  <div>
-    <h2>Recent Podcasts</h2>
-    <div v-for='(podcast, key) in recentPodcasts' :key='key'>
-      <podcast-box :podcast="podcast" :index="key" :numPodcasts="recentPodcasts.length - 1"></podcast-box>
-    </div>
+  <h2>Recent Podcasts</h2>
+  <div v-for='(podcast, key) in recentPodcasts' :key='key'>
+    <podcast-box :podcast="podcast" :index="key" :numPodcasts="recentPodcasts.length - 1"></podcast-box>
   </div>
 </div>
 </template>
