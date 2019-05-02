@@ -1,6 +1,6 @@
 <template>
-  <div class="archive">
-    <h2>Archive</h2>
+  <div>
+    <h2>All Podcasts</h2>
     <div v-for='(podcast, key) in allPodcasts' :key='key'>
       <podcast-box :podcast="podcast" :index="key" :numPodcasts="allPodcasts.length - 1"></podcast-box>
     </div>
@@ -12,7 +12,7 @@ import podcastList from '@/assets/podcastList.json';
 import podcastBox from '@/components/PodcastBox.vue';
 
 export default {
-  name: 'Archive',
+  name: 'AllPodcasts',
   components: {
     podcastBox,
   },
@@ -25,5 +25,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/views/archive.scss";
+@import "../styles/views/allPodcasts.scss";
 </style>

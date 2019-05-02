@@ -1,0 +1,41 @@
+.amazon {
+  color: $primary;
+}
+
+.thankYou {
+  margin-top: 20px;
+}
+
+.store {
+  text-align: center;
+}
+
+.shirtContainer {
+  border-bottom: 1px solid $tertiary;
+  padding: 20px 0;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.shirt {
+  @include screen('x-small') {
+    width: 75%;
+  }
+  @include screen('small') {
+    width: 45%;
+  }
+  @include screen('medium') {
+    width: 45%;
+  }
+  @include screen('large') {
+    width: 45%;
+  }
+  @include screen('x-large') {
+    width: 45%;
+  }
+}
+
+.lastShirt {
+  border: none;
+}
