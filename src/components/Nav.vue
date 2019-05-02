@@ -105,9 +105,9 @@ export default {
     },
   },
   mounted() {
-    const landingRoute = window.location.hash.split('/')[1]
+    const landingRoute = window.location.hash.split('/')[1];
 
-    this.selectedRoute = landingRoute ? landingRoute : '/';
+    this.selectedRoute = landingRoute || '/';
 
     this.showMenu();
   },
