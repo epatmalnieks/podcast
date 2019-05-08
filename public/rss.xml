@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="https://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>78% Sports</title>
+    <link>https://www.78percentsports.com/rss.xml</link>
+    <description>A podcast with 78% sports and 22% nonsense.</description>
+    <language>en</language>
+    <itunes:author>Erik Patmalnieks and Ryan Belous</itunes:author>
+    <itunes:category text="Sports"/>
+    <itunes:image href="https://www.78percentsports.com/78percentsports.png"/>
+    <itunes:explicit>yes</itunes:explicit>
+    <itunes:complete>no</itunes:complete>
+    <item>
+      <title>Podcast #1</title>
+      <description>Our first podcast! We talk about what to expect on the show now and in the future. Then, we give fantasy baseball draft advice: What to watch out for, tips &amp; tricks, what not to do, and more. Lastly, we discuss the potential MLB rule changes for the upcoming season and beyond.</description>
+      <pubDate>2/21/2019</pubDate>
+      <enclosure url="https://s3.us-east-2.amazonaws.com/78percentsports/podcast_2_21_2019.mp3" type="audio/mpeg"/>
+    </item>
+  </channel>
+</rss>
