@@ -13,14 +13,14 @@
     <itunes:explicit>yes</itunes:explicit>
     <itunes:complete>no</itunes:complete>
     <item>
-      <guid>https://s3.us-east-2.amazonaws.com/78percentsports/podcast_2_21_2019.mp3</guid>
       <title>Podcast #1</title>
+      <guid isPermaLink="true">https://s3.us-east-2.amazonaws.com/78percentsports/podcast_2_21_2019.mp3</guid>
       <description>Our first podcast! We talk about what to expect on the show now and in the future. Then, we give fantasy baseball draft advice: What to watch out for, tips &amp; tricks, what not to do, and more. Lastly, we discuss the potential MLB rule changes for the upcoming season and beyond.</description>
       <pubDate>2/21/2019</pubDate>
       <enclosure url="https://s3.us-east-2.amazonaws.com/78percentsports/podcast_2_21_2019.mp3" type="audio/mpeg"/>
       <image href="https://www.78percentsports.com/78percentsports.png"/>
-      <author>Erik Patmalnieks and Ryan Belous</author>
-      <itunes:author>Erik Patmalnieks and Ryan Belous</itunes:author>
+      <author>Erik Patmalnieks &amp; Ryan Belous</author>
+      <itunes:author>Erik Patmalnieks &amp; Ryan Belous</itunes:author>
       <itunes:image href="https://www.78percentsports.com/78percentsports.png"/>
       <itunes:duration>35:44</itunes:duration>
     </item>
