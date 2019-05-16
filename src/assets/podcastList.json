@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "Chiarelli's Market",
+      "date": "5/16/2019",
+      "summary": "We both worked our first jobs and met at a small meat market in Lincoln Park named Chiarelli's Market, roughly 20 years ago. This podcast is dedicated to the absolute nonsense that happened there leading to us becoming best friends. If anyone named Chiarelli listens to this, we want to apologize in advance!",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_5_16_2019.mp3",
+      "music": {
+        "artist": "Hans Atom",
+        "song": "Who'll play the Blues?"
+      }
+    },{
       "title": "GOATs & Busts",
       "date": "5/9/2019",
       "summary": "This episode is all about the GOATs, the Greatest Of All Time in each sport. We talk about their incredible accomplishments, insane records, and why they are the best ever at their respective sport. Then we talk about the complete opposite end of the spectrum, the worst Busts of all time. They are guys who were highly thought of that failed to live up to expectations and had disastrous careers.",
