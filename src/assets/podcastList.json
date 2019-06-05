@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "Playing Catch Up",
+      "date": "6/6/2019",
+      "summary": "A lot can happen in two weeks! We talk about Ryan's staycation and Erik's trip to The Bahamas. Then, we catch up with The NBA Finals and share our prediction of who will win. MLB draft results are next, specifically with what the Detroit Tigers did. Lastly, the NFL OTAs have started and that has us excited for football, so we try to figure out the intriguing NFC North.",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_6_6_2019.mp3",
+      "music": {
+        "artist": "Aussens@iter",
+        "song": "May"
+      }
+    },{
       "title": "Game of Thrones Series Finale",
       "date": "5/23/2019",
       "summary": "Ryan liked the Game of Thrones series finale. Erik absolutely hated it. We discuss all of the things that happened in the final episode and the final season as a whole. Erik then offers up some alternate endings that are far superior to the one revealed this past Sunday night. A must listen for any Game of Thrones fan!",
