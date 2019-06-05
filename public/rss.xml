@@ -15,7 +15,7 @@
       <guid isPermaLink="false">66ae20cd-7d16-4846-926a-3c0c9d713ed2</guid>
       <description>Our first podcast! We talk about what to expect on the show now and in the future. Then, we give fantasy baseball draft advice: What to watch out for, tips &amp; tricks, what not to do, and more. Lastly, we discuss the potential MLB rule changes for the upcoming season and beyond.</description>
       <pubDate>Thu, 21 Feb 2019 14:00:00 GMT</pubDate>
-      <enclosure url="https://s3.us-east-2.amazonaws.com/78percentsports/podcast_2_21_2019.mp3" type="audio/mpeg"/>
+      <enclosure url="https://s3.us-east-2.amazonaws.com/78percentsports/podcast_2_21_2019.mp3" type="audio/mpeg" length="36828052"/>
       <itunes:duration>35:44</itunes:duration>
     </item>
   </channel>
