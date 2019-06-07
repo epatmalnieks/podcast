@@ -6,6 +6,7 @@
     <description>A podcast with 78% sports and 22% nonsense.</description>
     <language>en</language>
     <itunes:author>Erik Patmalnieks &amp; Ryan Belous</itunes:author>
+    <itunes:email>78percentsports@gmail.com</itunes:email>
     <itunes:category text="Sports"/>
     <itunes:image href="https://www.78percentsports.com/78percentsports-square.png"/>
     <itunes:explicit>yes</itunes:explicit>
