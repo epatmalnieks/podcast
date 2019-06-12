@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "Fan Q&A",
+      "date": "6/13/2019",
+      "summary": "We asked our fans what they wanted us to talk about and they delivered. From the dumbest thing we've done drunk to our favorite cereal to the origin of Hoyt Botch, this episode is packed with nonsense.",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_6_13_2019.mp3",
+      "music": {
+        "artist": "Jason Shaw",
+        "song": "JENNY'S THEME"
+      }
+    },{
       "title": "Playing Catch Up",
       "date": "6/6/2019",
       "summary": "A lot can happen in two weeks! We talk about Ryan's staycation and Erik's trip to The Bahamas. Then, we catch up with The NBA Finals and share our prediction of who will win. MLB draft results are next, specifically with what the Detroit Tigers did. Lastly, the NFL OTAs have started and that has us excited for football, so we try to figure out the intriguing NFC North.",
