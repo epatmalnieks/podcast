@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "NBA Offseason",
+      "date": "6/20/2019",
+      "summary": "On the heels of a Toronto Raptors championship, we do a deep dive into the exciting, upcoming NBA offseason. The championship, free agency, the Anthony Davis trade, and the NBA draft all get discussed in this basketball heavy podcast. During the final question, Ryan quickly tries to predict where all the major free agents are going to sign this offseason.",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_6_20_2019.mp3",
+      "music": {
+        "artist": "texasradiofish",
+        "song": "Walking Back to El Paso"
+      }
+    },{
       "title": "Fan Q&A",
       "date": "6/13/2019",
       "summary": "We asked our fans what they wanted us to talk about and they delivered. From the dumbest thing we've done drunk to our favorite cereal to the origin of Hoyt Botch, this episode is packed with nonsense.",
