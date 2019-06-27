@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "MLB Halfway Point",
+      "date": "6/27/2019",
+      "summary": "Back in March, we made predictions for division winners, wild card teams, league winners, Cy Young winners, MVPs and World Series winners for the 2019 MLB season. Now that the season is almost halfway over, we check to see how well those predictions have held up in this baseball only episode.",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_6_27_2019.mp3",
+      "music": {
+        "artist": "Alex Beroza",
+        "song": "Spinnin"
+      }
+    },{
       "title": "NBA Offseason",
       "date": "6/20/2019",
       "summary": "On the heels of a Toronto Raptors championship, we do a deep dive into the exciting, upcoming NBA offseason. The championship, free agency, the Anthony Davis trade, and the NBA draft all get discussed in this basketball heavy podcast. During the final question, Ryan quickly tries to predict where all the major free agents are going to sign this offseason.",
