@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "Favorite Athletes",
+      "date": "7/4/2019",
+      "summary": "Chris Sollars and Gabe McInchak join us to discuss who our favorite athletes were growing up, both nationally and locally in all four major sports. The first fantasy football question of the year gets asked at the end, and Ryan gives a bold answer.",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_7_4_2019.mp3",
+      "music": {
+        "artist": "texasradiofish",
+        "song": "Safe Sax"
+      }
+    },{
       "title": "MLB Halfway Point",
       "date": "6/27/2019",
       "summary": "Back in March, we made predictions for division winners, wild card teams, league winners, Cy Young winners, MVPs and World Series winners for the 2019 MLB season. Now that the season is almost halfway over, we check to see how well those predictions have held up in this baseball only episode.",
