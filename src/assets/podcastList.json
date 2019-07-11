@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "NBA Free Agency Aftermath",
+      "date": "7/11/2019",
+      "summary": "Now that Kawhi Leonard has signed, it is time to evaluate the outcome of the first few weeks of NBA free agency. Who got better? Who got worse? We talk about the pure chaos that happened around the league, from the Nets to the Clippers to the Knicks and much more.",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_7_11_2019.mp3",
+      "music": {
+        "artist": "Yshwa",
+        "song": "I Will"
+      }
+    },{
       "title": "Favorite Athletes",
       "date": "7/4/2019",
       "summary": "Chris Sollars and Gabe McInchak join us to discuss who our favorite athletes were growing up, both nationally and locally in all four major sports. The first fantasy football question of the year gets asked at the end, and Ryan gives a bold answer.",
