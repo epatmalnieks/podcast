@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "NFL 2019 Season Wins Over/Under",
+      "date": "7/18/2019",
+      "summary": "With the 2019 NFL season quickly approaching, we go through each team in the league and give our prediction for the number of wins the team will have when the season is all said and done.",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_7_18_2019.mp3",
+      "music": {
+        "artist": "Juanitos",
+        "song": "Black Samba"
+      }
+    },{
       "title": "NBA Free Agency Aftermath",
       "date": "7/11/2019",
       "summary": "Now that Kawhi Leonard has signed, it is time to evaluate the outcome of the first few weeks of NBA free agency. Who got better? Who got worse? We talk about the pure chaos that happened around the league, from the Nets to the Clippers to the Knicks and much more.",
