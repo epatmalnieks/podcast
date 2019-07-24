@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "Fantasy Football Studs & Duds",
+      "date": "7/25/2019",
+      "summary": "Finally, our first fantasy football podcast! We pick two studs and two duds ranked in the top 15 at each position. A stud will bring you home a championship and a dud will ruin your season! A must listen for anyone desperate for some fantasy football!",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_7_25_2019.mp3",
+      "music": {
+        "artist": "Turku, Nomads of the Silk Road",
+        "song": "Yesilim"
+      }
+    },{
       "title": "NFL 2019 Season Wins Over/Under",
       "date": "7/18/2019",
       "summary": "With the 2019 NFL season quickly approaching, we go through each team in the league and give our prediction for the number of wins the team will have when the season is all said and done.",

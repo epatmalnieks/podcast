@@ -12,6 +12,14 @@
     <itunes:explicit>yes</itunes:explicit>
     <itunes:complete>no</itunes:complete>
     <item>
+      <title>Fantasy Football Studs &amp; Duds</title>
+      <guid isPermaLink="false">4e3a6c76-6309-4e0b-a59e-ab0f0bf99917</guid>
+      <description></description>
+      <pubDate>Thu, 25 Jul 2019 14:00:00 GMT</pubDate>
+      <enclosure url="https://s3.us-east-2.amazonaws.com/78percentsports/podcast_7_25_2019.mp3" type="audio/mpeg" length="53024257"/>
+      <itunes:duration>45:03</itunes:duration>
+    </item>
+    <item>
       <title>NFL 2019 Season Wins Over/Under</title>
       <guid isPermaLink="false">a8b8ecbf-23f2-42a7-b0fc-b22e99681ffe</guid>
       <description>With the 2019 NFL season quickly approaching, we go through each team in the league and give our prediction for the number of wins the team will have when the season is all said and done.</description>
