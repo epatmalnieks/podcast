@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "Fantasy Football Sleepers & Keepers",
+      "date": "8/1/2019",
+      "summary": "We are in full fantasy football mode now! This episode is all about the sleepers and keepers in this year's draft. A sleeper is a guy ranked outside of the top 15 at his position that will massively outperform his average draft position. A keeper is a player under the age of 25 that you'll want to draft in the late rounds that can lead your team to victory for the next decade.",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_8_1_2019.mp3",
+      "music": {
+        "artist": "XTaKeRuX",
+        "song": "Shinigami"
+      }
+    },{
       "title": "Fantasy Football Studs & Duds",
       "date": "7/25/2019",
       "summary": "Finally, our first fantasy football podcast! We pick two studs and two duds ranked in the top 15 at each position. A stud will bring you home a championship and a dud will ruin your season! A must listen for anyone desperate for some fantasy football!",
