@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "Fantasy Football Mock Draft",
+      "date": "8/8/2019",
+      "summary": "Today we did a live, 10 team, PPR mock draft for fantasy football! We explain each draft pick as it's made and talk about draft strategy overall as a whole. Whether it's your first time playing or if you're a seasoned veteran, there are great tips and advice throughout this one!",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_8_8_2019.mp3",
+      "music": {
+        "artist": "Strong Suit",
+        "song": "Brainwavves"
+      }
+    },{
       "title": "Fantasy Football Sleepers & Keepers",
       "date": "8/1/2019",
       "summary": "We are in full fantasy football mode now! This episode is all about the sleepers and keepers in this year's draft. A sleeper is a guy ranked outside of the top 15 at his position that will massively outperform his average draft position. A keeper is a player under the age of 25 that you'll want to draft in the late rounds that can lead your team to victory for the next decade.",
