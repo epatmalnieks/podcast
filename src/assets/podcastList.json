@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "2019 NFL Season Predictions",
+      "date": "8/15/2019",
+      "summary": "Taking a break from fantasy this week, we pick division winners, wild cards, conference championships, and Super Bowl winners in this NFL-only podcast. Some bold predictions in this one so be sure to let us know what you think!",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_8_15_2019.mp3",
+      "music": {
+        "artist": "Yellow Cop",
+        "song": "Century"
+      }
+    },{
       "title": "Fantasy Football Mock Draft",
       "date": "8/8/2019",
       "summary": "Today we did a live, 10 team, PPR mock draft for fantasy football! We explain each draft pick as it's made and talk about draft strategy overall as a whole. Whether it's your first time playing or if you're a seasoned veteran, there are great tips and advice throughout this one!",
