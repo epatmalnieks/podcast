@@ -16,7 +16,8 @@
       <guid isPermaLink="false">70e91003-4c95-4e93-ab8b-f99e29a54e54</guid>
       <description>We each came up with 20 of our boldest fantasy football predictions for the 2019 NFL season. Some things we are completely opposite on so it will be very interesting to see how the season plays out. Tune in for last minute advice to help you win your league!</description>
       <pubDate>Thu, 22 Aug 2019 14:00:00 GMT</pubDate>
-      <enclosure url="https://s3.us-east-2.amazonaws.com/78percentsports/podcast_8_22_2019.mp3" />
+      <enclosure url="https://s3.us-east-2.amazonaws.com/78percentsports/podcast_8_22_2019.mp3" type="audio/mpeg" length="58319898"/>
+      <itunes:duration>50:41</itunes:duration>
     </item>
     <item>
       <title>2019 NFL Season Predictions</title>
