@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "College Football and Otosclerosis",
+      "date": "8/29/2019",
+      "summary": "Erik is by himself today talking about college football and his disdain for Jim Harbaugh. Then, he gives the long answer on what happened with his ears causing two surgeries.",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_8_29_2019.mp3",
+      "music": {
+        "artist": "Yshwa",
+        "song": "looking at my blunt (instrumental)"
+      }
+    },{
       "title": "40 Bold Fantasy Football Predictions",
       "date": "8/22/2019",
       "summary": "We each came up with 20 of our boldest fantasy football predictions for the 2019 NFL season. Some things we are completely opposite on so it will be very interesting to see how the season plays out. Tune in for last minute advice to help you win your league!",
