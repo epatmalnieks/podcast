@@ -12,6 +12,14 @@
     <itunes:explicit>yes</itunes:explicit>
     <itunes:complete>no</itunes:complete>
     <item>
+      <title>NFL Week 1 Picks</title>
+      <guid isPermaLink="false">49e949de-b783-410e-bbf5-9b7f1f9d61f0</guid>
+      <description>Erik gives his picks for each matchup for Week 1 of the NFL, including survival pick 'em, confidence points, and with the spread.</description>
+      <pubDate>Thu, 5 Sept 2019 14:00:00 GMT</pubDate>
+      <enclosure url="https://s3.us-east-2.amazonaws.com/78percentsports/podcast_9_5_2019.mp3" type="audio/mpeg" length="35807616"/>
+      <itunes:duration>30:32</itunes:duration>
+    </item>
+    <item>
       <title>College Football and Otosclerosis</title>
       <guid isPermaLink="false">ee6a42f6-22aa-4ded-83f8-b2daa35a7212</guid>
       <description>Erik is by himself today talking about college football and his disdain for Jim Harbaugh. Then, he gives the long answer on what happened with his ears causing two surgeries.</description>
