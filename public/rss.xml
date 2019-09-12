@@ -12,6 +12,14 @@
     <itunes:explicit>yes</itunes:explicit>
     <itunes:complete>no</itunes:complete>
     <item>
+      <title>Football Catch Up</title>
+      <guid isPermaLink="false">ac9abb46-06a8-4194-9bf0-4749a328f744</guid>
+      <description>Ryan is back! This week we introduce a new weekly football segment where we make our selections for survival pick 'em, underdog of the week, and a new betting game of Ryan vs. Erik. Then, we catch up on some major storylines from the past few weeks, from Andrew Luck retiring to Antonio Brown being cut to Ezekiel Elliot's contract hold out. A must listen for football fans!</description>
+      <pubDate>Thu, 12 Sep 2019 14:00:00 GMT</pubDate>
+      <enclosure url="https://s3.us-east-2.amazonaws.com/78percentsports/podcast_9_12_2019.mp3" type="audio/mpeg" length="49685481"/>
+      <itunes:duration>42:54</itunes:duration>
+    </item>
+    <item>
       <title>NFL Week 1 Picks</title>
       <guid isPermaLink="false">49e949de-b783-410e-bbf5-9b7f1f9d61f0</guid>
       <description>Erik gives his picks for each matchup for Week 1 of the NFL, including survival pick 'em, confidence points, and with the spread.</description>
