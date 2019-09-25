@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "Our Top 10 TV Shows Still Airing",
+      "date": "9/26/2019",
+      "summary": "After our weekly NFL segment, The Crap Shoot, we take a break from sports and each list our top 10 favorite TV shows that are still airing. A great episode for those who love to binge watch and are looking for something new!",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_9_26_2019.mp3",
+      "music": {
+        "artist": "VJ Memes",
+        "song": "Reggae Instrumental Mix"
+      }
+    },{
       "title": "Random Football Stuff",
       "date": "9/19/2019",
       "summary": "On today's show we review the results from our new segment, The Crap Shoot, introduced last week. Then we go through a bunch of random football topics, including Michigan vs. Wisconsin and broken quarterbacks galore.",
