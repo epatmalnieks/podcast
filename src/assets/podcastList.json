@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "2019 Fantasy Baseball Predictions Review",
+      "date": "10/3/2019",
+      "summary": "Now that the 2019 MLB regular season has officially ended, we take a look back at our previous fantasy baseball episodes, Studs & Duds and Sleepers & Keepers, to see how right and wrong we were with our predictions for the fantasy season.",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_10_3_2019.mp3",
+      "music": {
+        "artist": "Lancefield",
+        "song": "Flotation Device"
+      }
+    },{
       "title": "Our Top 10 TV Shows Still Airing",
       "date": "9/26/2019",
       "summary": "After our weekly NFL segment, The Crap Shoot, we take a break from sports and each list our top 10 favorite TV shows that are still airing. A great episode for those who love to binge watch and are looking for something new!",
