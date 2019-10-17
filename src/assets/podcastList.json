@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "The Crap Shoot",
+      "date": "10/17/2019",
+      "summary": "Ryan is on vacation, so here is a quick podcast with just our weekly NFL segment that will help you win big with your NFL bets for Week 7!",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_10_17_2019.mp3",
+      "music": {
+        "artist": "Yshwa",
+        "song": "I Will"
+      }
+    },{
       "title": "Fantasy Basketball Mock Draft",
       "date": "10/10/2019",
       "summary": "With the NBA season right around the corner, it's time to practice our fantasy basketball draft strategy. This week, we do a live mock draft while giving helpful pointers and advice to help you win your league!",
