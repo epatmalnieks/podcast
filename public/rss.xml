@@ -12,6 +12,14 @@
     <itunes:explicit>yes</itunes:explicit>
     <itunes:complete>no</itunes:complete>
     <item>
+      <title>The Crap Shoot</title>
+      <guid isPermaLink="false">800469e8-5357-4ae8-8782-cf49520cc2e7</guid>
+      <description>Ryan is on vacation, so here is a quick podcast with just our weekly NFL segment that will help you win big with your NFL bets for Week 7!</description>
+      <pubDate>Thu, 17 Oct 2019 14:00:00 GMT</pubDate>
+      <enclosure url="https://s3.us-east-2.amazonaws.com/78percentsports/podcast_10_17_2019.mp3" type="audio/mpeg" length="16490580"/>
+      <itunes:duration>13:44</itunes:duration>
+    </item>
+    <item>
       <title>Fantasy Basketball Mock Draft</title>
       <guid isPermaLink="false">7fb32d75-5ee9-43b6-a5e6-e46e3d3fc38c</guid>
       <description>With the NBA season right around the corner, it's time to practice our fantasy basketball draft strategy. This week, we do a live mock draft while giving helpful pointers and advice to help you win your league!</description>
