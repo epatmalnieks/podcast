@@ -12,6 +12,14 @@
     <itunes:explicit>yes</itunes:explicit>
     <itunes:complete>no</itunes:complete>
     <item>
+      <title>The Crap Shoot Three</title>
+      <guid isPermaLink="false">19c5bdb7-f455-42b8-b193-7e2a206afbcf</guid>
+      <description>Happy Halloween! Ryan is still out, so here is a quick podcast featuring our NFL betting segment called The Crap Shoot.</description>
+      <pubDate>Thu, 31 Oct 2019 14:00:00 GMT</pubDate>
+      <enclosure url="https://s3.us-east-2.amazonaws.com/78percentsports/podcast_10_31_2019.mp3" type="audio/mpeg" length="14030756"/>
+      <itunes:duration>11:35</itunes:duration>
+    </item>
+    <item>
       <title>The Crap Shoot Again</title>
       <guid isPermaLink="false">c41cc39f-ac61-4c97-99d2-c1e6cd607043</guid>
       <description>Ryan is still on vacation, so here is another short podcast featuring our weekly NFL betting segment called The Crap Shoot.</description>
