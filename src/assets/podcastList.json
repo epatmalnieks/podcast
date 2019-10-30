@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "The Crap Shoot Three",
+      "date": "10/31/2019",
+      "summary": "Happy Halloween! Ryan is still out, so here is a quick podcast featuring our NFL betting segment called The Crap Shoot.",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_10_31_2019.mp3",
+      "music": {
+        "artist": "Jhovanny Fontanez",
+        "song": "Modestly Rude"
+      }
+    },{
       "title": "The Crap Shoot Again",
       "date": "10/24/2019",
       "summary": "Ryan is still on vacation, so here is another short podcast featuring our weekly NFL betting segment called The Crap Shoot.",
