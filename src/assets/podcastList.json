@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "2019 NBA Season Predictions",
+      "date": "11/7/2019",
+      "summary": "Back to normal this week! We give our 2019 NBA season predictions, including playoff teams from both conferences, NBA Finals champion, and MVP.",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_11_7_2019.mp3",
+      "music": {
+        "artist": "Cyba",
+        "song": "Shadows"
+      }
+    },{
       "title": "The Crap Shoot Three",
       "date": "10/31/2019",
       "summary": "Happy Halloween! Ryan is still out, so here is a quick podcast featuring our NFL betting segment called The Crap Shoot.",
