@@ -12,6 +12,14 @@
     <itunes:explicit>yes</itunes:explicit>
     <itunes:complete>no</itunes:complete>
     <item>
+      <title>NFL Talk</title>
+      <guid isPermaLink="false">9f82c976-8f89-4965-a5f4-d03830fab767</guid>
+      <description>This week we take a look at the current standings in the NFL and give our thoughts on how the season has unfolded and what to expect in the weeks to come.</description>
+      <pubDate>Thu, 14 Nov 2019 14:00:00 GMT</pubDate>
+      <enclosure url="https://s3.us-east-2.amazonaws.com/78percentsports/podcast_11_14_2019.mp3" type="audio/mpeg" length="47946998"/>
+      <itunes:duration></itunes:duration>
+    </item>
+    <item>
       <title>2019 NBA Season Predictions</title>
       <guid isPermaLink="false">d6a955df-2e59-41f1-83b2-8ef17fa7e24d</guid>
       <description>Back to normal this week! We give our 2019 NBA season predictions, including playoff teams from both conferences, NBA Finals champion, and MVP.</description>
