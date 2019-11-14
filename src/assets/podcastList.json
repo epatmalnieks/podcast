@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "NFL Talk",
+      "date": "11/14/2019",
+      "summary": "This week we take a look at the current standings in the NFL and give our thoughts on how the season has unfolded and what to expect in the weeks to come.",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_11_14_2019.mp3",
+      "music": {
+        "artist": "Aussens@iter",
+        "song": "Chance Encounter"
+      }
+    },{
       "title": "2019 NBA Season Predictions",
       "date": "11/7/2019",
       "summary": "Back to normal this week! We give our 2019 NBA season predictions, including playoff teams from both conferences, NBA Finals champion, and MVP.",
