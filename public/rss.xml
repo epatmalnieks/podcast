@@ -12,12 +12,20 @@
     <itunes:explicit>yes</itunes:explicit>
     <itunes:complete>no</itunes:complete>
     <item>
+      <title>2019 MLB Season Review</title>
+      <guid isPermaLink="false">9b7a9e16-abce-4a68-b415-cc436355f720</guid>
+      <description>Back in March, we gave our predictions for MLB division winners, wild card teams, World Series winner, Cy Young winner, and MVP. We take a look back in this episode to see how spot on and far off we were.</description>
+      <pubDate>Thu, 21 Nov 2019 14:00:00 GMT</pubDate>
+      <enclosure url="https://s3.us-east-2.amazonaws.com/78percentsports/podcast_11_21_2019.mp3" type="audio/mpeg" length="59564224"/>
+      <itunes:duration>51:48</itunes:duration>
+    </item>
+    <item>
       <title>NFL Talk</title>
       <guid isPermaLink="false">9f82c976-8f89-4965-a5f4-d03830fab767</guid>
       <description>This week we take a look at the current standings in the NFL and give our thoughts on how the season has unfolded and what to expect in the weeks to come.</description>
       <pubDate>Thu, 14 Nov 2019 14:00:00 GMT</pubDate>
       <enclosure url="https://s3.us-east-2.amazonaws.com/78percentsports/podcast_11_14_2019.mp3" type="audio/mpeg" length="47946998"/>
-      <itunes:duration></itunes:duration>
+      <itunes:duration>42:12</itunes:duration>
     </item>
     <item>
       <title>2019 NBA Season Predictions</title>
