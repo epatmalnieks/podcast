@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "2019 MLB Season Review",
+      "date": "11/21/2019",
+      "summary": "Back in March, we gave our predictions for MLB division winners, wild card teams, World Series winner, Cy Young winner, and MVP. We take a look back in this episode to see how spot on and far off we were.",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_11_21_2019.mp3",
+      "music": {
+        "artist": "Kara Square",
+        "song": "Countryside Summer Joyride"
+      }
+    },{
       "title": "NFL Talk",
       "date": "11/14/2019",
       "summary": "This week we take a look at the current standings in the NFL and give our thoughts on how the season has unfolded and what to expect in the weeks to come.",
