@@ -12,6 +12,14 @@
     <itunes:explicit>yes</itunes:explicit>
     <itunes:complete>no</itunes:complete>
     <item>
+      <title>Happy Thanksgiving!</title>
+      <guid isPermaLink="false">b0bb0cec-6cb8-408e-b1a4-7797e8c8e3bd</guid>
+      <description>Will Michigan upset Ohio State this weekend? What does the current NFL playoff picture look like? Who will make it and who will come up short? Find out in this Thanksgiving edition of 78% Sports!</description>
+      <pubDate>Thu, 28 Nov 2019 14:00:00 GMT</pubDate>
+      <enclosure url="https://s3.us-east-2.amazonaws.com/78percentsports/podcast_11_28_2019.mp3" type="audio/mpeg" length="43027745"/>
+      <itunes:duration>37:20</itunes:duration>
+    </item>
+    <item>
       <title>2019 MLB Season Review</title>
       <guid isPermaLink="false">9b7a9e16-abce-4a68-b415-cc436355f720</guid>
       <description>Back in March, we gave our predictions for MLB division winners, wild card teams, World Series winner, Cy Young winner, and MVP. We take a look back in this episode to see how spot on and far off we were.</description>
