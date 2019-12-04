@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "Our Top 10 TV Shows That Have Ended",
+      "date": "12/5/2019",
+      "summary": "Putting sports on the backburner this week, we each list our top 10 favorite TV shows that have ended and are no longer airing. A great episode for those who are looking for some of the best shows of all time to binge watch!",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_12_5_2019.mp3",
+      "music": {
+        "artist": "Skill_Borrower",
+        "song": "Hack the Forest"
+      }
+    },{
       "title": "Happy Thanksgiving!",
       "date": "11/28/2019",
       "summary": "Will Michigan upset Ohio State this weekend? What does the current NFL playoff picture look like? Who will make it and who will come up short? Find out in this Thanksgiving edition of 78% Sports!",
