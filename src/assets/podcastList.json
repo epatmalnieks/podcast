@@ -1,5 +1,14 @@
 {
   "podcasts": [{
+      "title": "NFL Week 15 Crap Shoot",
+      "date": "12/12/2019",
+      "summary": "Check out our weekly NFL picks for survival pick 'em, underdog, and spread bet of the week.",
+      "src": "https://s3.us-east-2.amazonaws.com/78percentsports/podcast_12_12_2019.mp3",
+      "music": {
+        "artist": "Martijn de Boer",
+        "song": "O Tannenbaum / Oh Christmas Tree"
+      }
+    },{
       "title": "Our Top 10 TV Shows That Have Ended",
       "date": "12/5/2019",
       "summary": "Putting sports on the backburner this week, we each list our top 10 favorite TV shows that have ended and are no longer airing. A great episode for those who are looking for some of the best shows of all time to binge watch!",

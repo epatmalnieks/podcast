@@ -12,6 +12,14 @@
     <itunes:explicit>yes</itunes:explicit>
     <itunes:complete>no</itunes:complete>
     <item>
+      <title>NFL Week 15 Crap Shoot</title>
+      <guid isPermaLink="false">b31e7452-da85-4ef1-895d-6e923445ff68</guid>
+      <description>Check out our weekly NFL picks for survival pick 'em, underdog, and spread bet of the week.</description>
+      <pubDate>Thu, 12 Dec 2019 14:00:00 GMT</pubDate>
+      <enclosure url="https://s3.us-east-2.amazonaws.com/78percentsports/podcast_12_12_2019.mp3" type="audio/mpeg" length="11942339"/>
+      <itunes:duration>10:05</itunes:duration>
+    </item>
+    <item>
       <title>Our Top 10 TV Shows That Have Ended</title>
       <guid isPermaLink="false">60b8d43f-47e7-4517-b219-59936b613021</guid>
       <description>Putting sports on the backburner this week, we each list our top 10 favorite TV shows that have ended and are no longer airing. A great episode for those who are looking for some of the best shows of all time to binge watch!</description>
